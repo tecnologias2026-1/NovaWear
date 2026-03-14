@@ -6,8 +6,9 @@ Escribe aquí una descripción corta del proyecto.
 
 👥 Integrantes
 
-Nombre completo – Código
-Nombre completo – Código
+Laura Johanna Casas - 1202777
+Valeria Pantoja Macías - 
+Nicolás Caro Betancurt - 1202750
 
 🎯 1. Objetivo General
 
@@ -46,10 +47,7 @@ Diagrama de Secuencia
 Explicar qué proceso representa.
 
 🎨 5. URL del Prototipo
-
-Colocar aquí el enlace público de Figma:
-
-https://figma.com/xxxxx
+https://www.figma.com/proto/7a6go6iI8TAc55X5vObH0T/Mockcup?node-id=0-1&t=GBLyK1flqgiVamBy-1
 
 
 🗄️ 6. Diseño de Base de Datos
