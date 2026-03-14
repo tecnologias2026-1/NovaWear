@@ -1,13 +1,13 @@
 Para Completar por grupo
 
-🌐 Nombre del Proyecto
+🌐 NovaWear
 
 Escribe aquí una descripción corta del proyecto.
 
 👥 Integrantes
 
 Laura Johanna Casas - 1202777
-Valeria Pantoja Macías - 
+Valeria Pantoja Macías - 1202785
 Nicolás Caro Betancurt - 1202750
 
 🎯 1. Objetivo General
