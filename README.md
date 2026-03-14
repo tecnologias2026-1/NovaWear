@@ -55,6 +55,7 @@ https://www.figma.com/proto/7a6go6iI8TAc55X5vObH0T/Mockcup?node-id=0-1&t=GBLyK1f
 Agregar imagen del modelo.
 Tablas principales
 
+
 🧩 7. Documentación del Sistema
 Estructura de Carpetas
 /css
