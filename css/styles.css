@@ -1,0 +1,62 @@
+/* Reset básico */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+.icons span {
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+/* HERO (imagen grande) */
+.hero {
+    height: 90vh;
+    background: url("../assets/tu-imagen.jpg") center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.buttons button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
