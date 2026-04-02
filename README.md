@@ -58,11 +58,17 @@ El sistema debe permitir al administrador agregar, editar y eliminar productos, 
 3.2 Requerimientos No Funcionales
 
 Se definieron los siguientes requerimientos no funcionales:
+
 RNF1. El sistema debe estar disponible 24/7, salvo mantenimientos programados.
+
 RNF2. La plataforma debe ser responsive (adaptable a dispositivos móviles, tablets y computadores).
+
 RNF3. El tiempo de respuesta del sistema no debe superar los 3 segundos en operaciones comunes.
+
 RNF4. El sistema debe garantizar la integridad de los datos almacenados en la base de datos.
+
 RNF5. El sistema debe permitir una escalabilidad básica para soportar un aumento moderado de usuarios.
+
 RNF6. El sistema debe proteger la información personal del usuario conforme a normativas de protección de datos.
 
 
