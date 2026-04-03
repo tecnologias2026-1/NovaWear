@@ -76,7 +76,7 @@ nav {
 .hero-kendall {
     margin: 0; /* Cambiado de 30px 5% a 0 */
     background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
-                url('img/kendalljenner.webp');
+                url('../img/kendalljenner.webp');
     background-size: cover;
     background-position: center;
     min-height: 600px;
