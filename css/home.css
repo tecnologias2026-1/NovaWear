@@ -1,1 +1,467 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
+body {
+    background-color: white;
+    color: #333;
+}
+
+/* ===== HEADER CON FLEXBOX ===== */
+header {
+    padding: 20px 5%;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #000;
+}
+
+.menu-central {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+.menu-central li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    padding: 10px 25px;
+    border: 2px solid black;
+    border-radius: 30px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.menu-central li a:hover {
+    background-color: black;
+    color: white;
+}
+
+.iconos-derecha {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.iconos-derecha li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+    transition: transform 0.2s;
+}
+
+.iconos-derecha li a:hover {
+    transform: scale(1.1);
+}
+
+/* ===== HERO KENDALL ===== */
+.hero-kendall {
+    margin: 0; /* Cambiado de 30px 5% a 0 */
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+                url('img/kendalljenner.webp');
+    background-size: cover;
+    background-position: center;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-contenido {
+    max-width: 600px;
+    padding: 20px;
+}
+
+.hero-contenido h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero-contenido p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.hero-botones {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.hero-btn {
+    padding: 15px 30px;
+    border: 2px solid white;
+    border-radius: 0px; /* Cambiado de 30px a 0px para que sea cuadrado */
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    background-color: transparent;
+    color: white;
+}
+
+.btn-mujer {
+    background-color: transparent;
+    color: white;
+}
+
+.btn-hombre {
+    background-color: transparent;
+    color: white;
+}
+
+.btn-mujer:hover {
+    background-color: white;
+    color: black;
+    transform: translateY(-3px);
+}
+
+.btn-hombre:hover {
+    background-color: white;
+    color: black;
+    transform: translateY(-3px);
+}
+
+/* ===== COLECCIONES DESTACADAS ===== */
+.colecciones {
+    padding: 60px 5%;
+    text-align: center;
+}
+
+.colecciones h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.colecciones p {
+    color: #666;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+}
+
+.grid-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.product-card {
+    background: white;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    position: relative;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+.card-img {
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.heart-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    transition: all 0.3s;
+    z-index: 2;
+}
+
+.heart-icon {
+    width: 22px;
+    height: 22px;
+    display: block;
+}
+
+/* Estado like (después de hacer clic) */
+.heart-btn.liked {
+    background-color: black;
+}
+
+.heart-btn.liked .heart-icon {
+    content: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23ff4d4d"%3E%3Cpath d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"%3E%3C/path%3E%3C/svg%3E');
+    /* Ese es un corazón rojo SVG */
+}
+
+.heart-btn:hover {
+    transform: scale(1.1);
+}
+
+.card-info {
+    padding: 15px;
+    text-align: left;
+}
+
+.card-info h3 {
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+
+.card-info .precio {
+    font-weight: bold;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+/* ===== SECCIÓN ARIANA Y TOM ===== */
+.celebridades {
+    padding: 40px 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.celebridad-card {
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.celebridad-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.3);
+}
+
+.celebridad-contenido {
+    position: relative;
+    z-index: 2;
+    padding: 30px;
+}
+
+.celebridad-contenido h3 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.celebridad-contenido p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.btn-explorar {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 12px 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-explorar:hover {
+    background-color: white;
+    color: black;
+    transform: translateY(-3px);
+}
+
+/* ===== SUSCRIPCIÓN ===== */
+.suscripcion {
+    padding: 60px 5%;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.suscripcion h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.suscripcion p {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.suscripcion-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.suscripcion-form input {
+    flex: 1;
+    padding: 15px 20px;
+    border: 2px solid #ddd;
+    border-radius: 30px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.suscripcion-form input:focus {
+    border-color: black;
+}
+
+.suscripcion-form button {
+    padding: 15px 30px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.suscripcion-form button:hover {
+    background-color: #333;
+    transform: translateY(-3px);
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 50px 5% 20px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.footer-col h4 {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col li {
+    margin-bottom: 10px;
+}
+
+.footer-col a {
+    color: #999;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-col a:hover {
+    color: white;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid #333;
+    color: #666;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+    .grid-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+/* Logo con ícono */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img {
+    height: 100px;
+    width: auto;
+}
+
+/* Íconos de navegación */
+.icono-nav {
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .menu-central {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .grid-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .celebridades {
+        grid-template-columns: 1fr;
+    }
+    
+    .suscripcion-form {
+        flex-direction: column;
+    }
+    
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero-botones {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hero-btn {
+        width: 200px;
+    }
+}
