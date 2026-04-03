@@ -1,1 +1,208 @@
-
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaWaer - Tienda de Moda</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- HEADER con Flexbox -->
+    <header>
+    <nav>
+        <!-- Logo izquierda con ícono -->
+        <div class="logo">
+            <img src="iconos/logo.svg" alt="Logo NovaWear" class="logo-img">
+            <a href="#">NovaWear</a>
+        </div>
+        
+        <!-- Menú central -->
+        <ul class="menu-central">
+            <li><a href="#">MUJER</a></li>
+            <li><a href="#">HOMBRE</a></li>
+            <li><a href="#">LO NUEVO</a></li>
+        </ul>
+        
+        <!-- Iconos derecha con imágenes -->
+        <ul class="iconos-derecha">
+            <li><a href="#" aria-label="Favoritos"><img src="iconos/favoritos.svg" alt="Favoritos" class="icono-nav"></a></li>
+            <li><a href="#" aria-label="Carrito"><img src="iconos/bolsa.svg" alt="Carrito" class="icono-nav"></a></li>
+            <li><a href="#" aria-label="Usuario"><img src="iconos/cuenta.svg" alt="Usuario" class="icono-nav"></a></li>
+        </ul>
+    </nav>
+</header>
+    
+    <!-- HERO con imagen Kendall Jenner -->
+    <section class="hero-kendall">
+        <div class="hero-contenido">
+            <h2>Elegancia Minimalista</h2>
+            <p>Descubre moda atemporal para el estilo de vida moderno</p>
+            <div class="hero-botones">
+                <button class="hero-btn btn-mujer">COMPRAR MUJER</button>
+                <button class="hero-btn btn-hombre">COMPRAR HOMBRE</button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- COLECCIONES DESTACADAS -->
+    <section class="colecciones">
+        <h2>COLECCIONES DESTACADAS</h2>
+        <p>Lo más popular de la temporada</p>
+        
+        <div class="grid-cards">
+            <div class="product-card">
+                <div class="card-img" style="background-image: url('img/Camiseta estilo polo.jpg')">
+                     <button class="heart-btn" onclick="toggleLike(this)">
+                     <img src="iconos/favoritos.svg" alt="Like" class="heart-icon">
+                </div>
+                <div class="card-info">
+                    <h3>Camiseta Polo Azul</h3>
+                    <span class="precio">$55.999 COP</span>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="card-img" style="background-image: url('img/ChaquetadecueroOversize.jpg')">
+                     <button class="heart-btn" onclick="toggleLike(this)">
+                     <img src="iconos/favoritos.svg" alt="Like" class="heart-icon">
+                </div>
+                <div class="card-info">
+                    <h3>Chaqueta tipo Bomber Oversize en Cuero</h3>
+                    <span class="precio">$250.000 COP</span>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="card-img" style="background-image: url('img/Conjuntonegro.webp')">
+                     <button class="heart-btn" onclick="toggleLike(this)">
+                     <img src="iconos/favoritos.svg" alt="Like" class="heart-icon">
+                </div>
+                <div class="card-info">
+                    <h3>Traje Sastre Moderno (Chaleco + Palazzo)</h3>
+                    <span class="precio">$249.900 COP</span>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="card-img" style="background-image: url('img/Gabanbeige.webp')">
+                     <button class="heart-btn" onclick="toggleLike(this)">
+                     <img src="iconos/favoritos.svg" alt="Like" class="heart-icon">
+                </div>
+                <div class="card-info">
+                    <h3>Gabán Elegante de Paño con Doble Botonadura</h3>
+                    <span class="precio">$190.000 COP</span>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="card-img" style="background-image: url('img/Vestidodebroderie.jpg')">
+                     <button class="heart-btn" onclick="toggleLike(this)">
+                     <img src="iconos/favoritos.svg" alt="Like" class="heart-icon">
+                </div>
+                <div class="card-info">
+                    <h3>Vestido de broderie</h3>
+                    <span class="precio">$180.000 COP</span>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="card-img" style="background-image: url('img/Chaqueta\ Denim.webp')">
+                     <button class="heart-btn" onclick="toggleLike(this)">
+                     <img src="iconos/favoritos.svg" alt="Like" class="heart-icon">
+                </div>
+                <div class="card-info">
+                    <h3>Chaqueta de Mezclilla Vintage con Bolsillos Cargo</h3>
+                    <span class="precio">$149.400 COP</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- SECCIÓN ARIANA Y TOM -->
+    <section class="celebridades">
+        <div class="celebridad-card" style="background-image: url('img/arianamujeres.jpg')">
+            <div class="celebridad-contenido">
+                <h3>MUJER</h3>
+                <button class="btn-explorar">EXPLORAR COLECCIÓN</button>
+            </div>
+        </div>
+        
+        <div class="celebridad-card" style="background-image: url('img/tomhombre.jpg')">
+            <div class="celebridad-contenido">
+                <h3>HOMBRE</h3>
+                <button class="btn-explorar">EXPLORAR COLECCIÓN</button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- SECCIÓN SUSCRIPCIÓN -->
+    <section class="suscripcion">
+        <h2>MANTENETE ACTUALIZADO</h2>
+        <p>Suscríbete para recibir las últimas novedades y ofertas exclusivas</p>
+        
+        <div class="suscripcion-form">
+            <input type="email" placeholder="Ingresa tu correo electrónico">
+            <button>SUSCRIBIRSE</button>
+        </div>
+    </section>
+    
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>NOVAWEAR</h4>
+                <p>Moda contemporánea para quienes buscan expresar su estilo único.</p>
+            </div>
+            
+            <div class="footer-col">
+                <h4>COMPRAS</h4>
+                <ul>
+                    <li><a href="#">Mujer</a></li>
+                    <li><a href="#">Hombre</a></li>
+                    <li><a href="#">Lo Nuevo</a></li>
+                    <li><a href="#">Ofertas</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>AYUDA</h4>
+                <ul>
+                    <li><a href="#">Envíos</a></li>
+                    <li><a href="#">Devoluciones</a></li>
+                    <li><a href="#">Tallas</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>SÍGUENOS</h4>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">TikTok</a></li>
+                    <li><a href="#">Pinterest</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2026 NOVAWEAR. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+   <script>
+    function toggleLike(button) {
+        button.classList.toggle('liked');
+        
+        if (button.classList.contains('liked')) {
+            // Cambia a corazón rojo (usando emoji o puedes seguir con SVG)
+            button.innerHTML = '❤️';
+            button.style.fontSize = '1.5rem';
+            button.style.color = '#ff4d4d';
+        } else {
+            // Vuelve a la imagen del ícono
+            button.innerHTML = '<img src="iconos/favoritos.svg" alt="Like" class="heart-icon">';
+        }
+    }
+</script>
+</body>
+</html>
