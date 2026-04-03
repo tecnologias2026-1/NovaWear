@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NovaWaer - Tienda de Moda</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../css/home.css">
 </head>
 <body>
     <!-- HEADER con Flexbox -->
     <header>
     <nav>
         <div class="logo">
-            <img src="iconos/logo.svg" alt="Logo NovaWear" class="logo-img">
+            <img src="../assets/iconos/logo.svg" alt="Logo NovaWear" class="logo-img">
             <a href="#">NovaWear</a>
         </div>
         
@@ -24,9 +24,9 @@
         
         <!-- Iconos derecha con imágenes -->
         <ul class="iconos-derecha">
-            <li><a href="#" aria-label="Favoritos"><img src="iconos/favoritos.svg" alt="Favoritos" class="icono-nav"></a></li>
-            <li><a href="#" aria-label="Carrito"><img src="iconos/bolsa.svg" alt="Carrito" class="icono-nav"></a></li>
-            <li><a href="#" aria-label="Usuario"><img src="iconos/cuenta.svg" alt="Usuario" class="icono-nav"></a></li>
+            <li><a href="#" aria-label="Favoritos"><img src="../assets/iconos/favoritos.svg" alt="Favoritos" class="icono-nav"></a></li>
+            <li><a href="#" aria-label="Carrito"><img src="../assets/iconos/bolsa.svg" alt="Carrito" class="icono-nav"></a></li>
+            <li><a href="#" aria-label="Usuario"><img src="../assets/iconos/cuenta.svg" alt="Usuario" class="icono-nav"></a></li>
         </ul>
     </nav>
 </header>
@@ -52,7 +52,7 @@
             <div class="product-card">
                 <div class="card-img" style="background-image: url('img/Camiseta estilo polo.jpg')">
                      <button class="heart-btn" onclick="toggleLike(this)">
-                     <img src="iconos/favoritos.svg" alt="Like" class="heart-icon">
+                     <img src="../assets/iconos/favoritos.svg" alt="Like" class="heart-icon">
                 </div>
                 <div class="card-info">
                     <h3>Camiseta Polo Azul</h3>
@@ -63,7 +63,7 @@
             <div class="product-card">
                 <div class="card-img" style="background-image: url('img/ChaquetadecueroOversize.jpg')">
                      <button class="heart-btn" onclick="toggleLike(this)">
-                     <img src="iconos/favoritos.svg" alt="Like" class="heart-icon">
+                     <img src="../assets/iconos/favoritos.svg" alt="Like" class="heart-icon">
                 </div>
                 <div class="card-info">
                     <h3>Chaqueta tipo Bomber Oversize en Cuero</h3>
@@ -74,7 +74,7 @@
             <div class="product-card">
                 <div class="card-img" style="background-image: url('img/Conjuntonegro.webp')">
                      <button class="heart-btn" onclick="toggleLike(this)">
-                     <img src="iconos/favoritos.svg" alt="Like" class="heart-icon">
+                     <img src="../assets/iconos/favoritos.svg" alt="Like" class="heart-icon">
                 </div>
                 <div class="card-info">
                     <h3>Traje Sastre Moderno (Chaleco + Palazzo)</h3>
@@ -85,7 +85,7 @@
             <div class="product-card">
                 <div class="card-img" style="background-image: url('img/Gabanbeige.webp')">
                      <button class="heart-btn" onclick="toggleLike(this)">
-                     <img src="iconos/favoritos.svg" alt="Like" class="heart-icon">
+                     <img src="../assets/iconos/favoritos.svg" alt="Like" class="heart-icon">
                 </div>
                 <div class="card-info">
                     <h3>Gabán Elegante de Paño con Doble Botonadura</h3>
@@ -96,7 +96,7 @@
             <div class="product-card">
                 <div class="card-img" style="background-image: url('img/Vestidodebroderie.jpg')">
                      <button class="heart-btn" onclick="toggleLike(this)">
-                     <img src="iconos/favoritos.svg" alt="Like" class="heart-icon">
+                     <img src="../assets/iconos/favoritos.svg" alt="Like" class="heart-icon">
                 </div>
                 <div class="card-info">
                     <h3>Vestido de broderie</h3>
@@ -107,7 +107,7 @@
             <div class="product-card">
                 <div class="card-img" style="background-image: url('img/Chaqueta\ Denim.webp')">
                      <button class="heart-btn" onclick="toggleLike(this)">
-                     <img src="iconos/favoritos.svg" alt="Like" class="heart-icon">
+                     <img src="../assets/iconos/favoritos.svg" alt="Like" class="heart-icon">
                 </div>
                 <div class="card-info">
                     <h3>Chaqueta de Mezclilla Vintage con Bolsillos Cargo</h3>
@@ -197,7 +197,7 @@
             button.style.fontSize = '1.5rem';
             button.style.color = '#ff4d4d';
         } else {
-            button.innerHTML = '<img src="iconos/favoritos.svg" alt="Like" class="heart-icon">';
+            button.innerHTML = '<img src="../assets/iconos/favoritos.svg" alt="Like" class="heart-icon">';
         }
     }
 </script>
