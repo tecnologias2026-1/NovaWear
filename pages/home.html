@@ -10,7 +10,6 @@
     <!-- HEADER con Flexbox -->
     <header>
     <nav>
-        <!-- Logo izquierda con ícono -->
         <div class="logo">
             <img src="iconos/logo.svg" alt="Logo NovaWear" class="logo-img">
             <a href="#">NovaWear</a>
@@ -194,12 +193,10 @@
         button.classList.toggle('liked');
         
         if (button.classList.contains('liked')) {
-            // Cambia a corazón rojo (usando emoji o puedes seguir con SVG)
             button.innerHTML = '❤️';
             button.style.fontSize = '1.5rem';
             button.style.color = '#ff4d4d';
         } else {
-            // Vuelve a la imagen del ícono
             button.innerHTML = '<img src="iconos/favoritos.svg" alt="Like" class="heart-icon">';
         }
     }
