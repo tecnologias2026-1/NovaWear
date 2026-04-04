@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaWear - Tienda de Moda</title>
+    <link rel="stylesheet" href="css/producto_styles.css">
+</head>
+
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+    <nav>
+        <div class="logo">
+            <img src="assets/iconos/logo.svg" alt="Logo NovaWear" class="logo-img">
+            <a href="#">NovaWear</a>
+        </div>
+
+        <ul class="menu-central">
+            <li><a href="#">MUJER</a></li>
+            <li><a href="#">HOMBRE</a></li>
+            <li><a href="#">LO NUEVO</a></li>
+        </ul>
+
+        <ul class="iconos-derecha">
+            <li><a href="#"><img src="assets/iconos/favoritos.svg" alt="Favoritos" class="icono-nav"></a></li>
+            <li><a href="#"><img src="assets/iconos/bolsa.svg" alt="Carrito" class="icono-nav"></a></li>
+            <li><a href="#"><img src="assets/iconos/cuenta.svg" alt="Usuario" class="icono-nav"></a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- ===== MAIN ===== -->
+<section class="producto">
+      <div class="producto-container">
+        <div class="producto-img">
+            <img src="assets/img/gaban_beige.png" alt="Gaban beige">
+        </div>
+
+        <!-- Info -->
+        <div class="producto-info">
+            <h1>Gaban beige minimalista</h1>
+            <p class="precio">$289.000</p>
+
+            <hr>
+
+            <p class="descripcion">
+                Un abrigo beige atemporal confeccionado con una mezcla de lana de primera calidad. 
+        Presenta un corte holgado y un diseño minimalista para una elegancia natural.
+            </p>
+
+         <div class="tallas">
+                <p>Seleccionar talla</p>
+                <div class="tallas-opciones">
+                    <button>XS</button>
+                    <button>S</button>
+                    <button>M</button>
+                    <button>L</button>
+                    <button>XL</button>
+                </div>
+            </div>
+
+        <div class="cantidad">
+                <p>Cantidad</p>
+                <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+            </div>
+             <!-- Botones -->
+            <div class="acciones">
+            <button class="fav-btn">
+             <img src="assets/iconos/favoritos.svg">
+             </button>
+
+             <button class="add-cart">
+              <img src="assets/iconos/bolsa.svg">
+               Añadir al carrito
+             </button>
+            </div>
+        </div>
+
+    </div>
+    <hr>
+        <h2>También te puede gustar</h2>
+
+
+    <!-- GRID DE PRODUCTOS -->
+    <div class="grid-cards">
+
+        <div class="card">
+           <div class="img-container">
+             <img src="assets/img/chaqueta_negra_oversize.jpg" alt="Chaqueta negra oversize">
+
+              <button class="heart-btn" onclick="toggleLike(this)">
+                     <img src="assets/iconos/favoritos.svg" alt="Like" class="heart-icon">
+              </button>
+              </div>
+
+            <p class="name">Chaqueta negra oversize</p>
+            <p class="price">$249.000</p>
+        </div>
+
+         <div class="card">
+           <div class="img-container">
+             <img src="assets/img/camisa_lana.jpeg" alt="Camisa de lana">
+
+             <button class="heart-btn" onclick="toggleLike(this)">
+                     <img src="assets/iconos/favoritos.svg" alt="Like" class="heart-icon">
+              </button>
+              </div>
+           
+            <p class="name">Camisa de lana</p>
+            <p class="price">$75.000</p>
+        </div>
+
+        <div class="card">
+           <div class="img-container">
+             <img src="assets/img/chaqueta_cafe.jpg" alt="Chaqueta café de cuero">
+
+             <button class="heart-btn" onclick="toggleLike(this)">
+                     <img src="assets/iconos/favoritos.svg" alt="Like" class="heart-icon">
+              </button>
+              </div>
+           
+            <p class="name">Chaqueta café de cuero</p>
+            <p class="price">$300.000</p>
+        </div>
+
+        <div class="card">
+           <div class="img-container">
+             <img src="assets/img/saco_blanco.jpg" alt="Saco de lana blanco">
+
+             <button class="heart-btn" onclick="toggleLike(this)">
+                     <img src="assets/iconos/favoritos.svg" alt="Like" class="heart-icon">
+              </button>
+              </div>
+           
+            <p class="name">Saco de lana blanco</p>
+            <p class="price">$199.000</p>
+        </div>
+
+    </div>
+
+    
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+    <div class="footer-grid">
+
+        <div class="footer-col">
+            <h4>NOVAWEAR</h4>
+            <p>Moda contemporánea para quienes buscan expresar su estilo único.</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>COMPRAS</h4>
+            <ul>
+                <li><a href="#">Mujer</a></li>
+                <li><a href="#">Hombre</a></li>
+                <li><a href="#">Lo Nuevo</a></li>
+                <li><a href="#">Ofertas</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>AYUDA</h4>
+            <ul>
+                <li><a href="#">Envíos</a></li>
+                <li><a href="#">Devoluciones</a></li>
+                <li><a href="#">Tallas</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>SÍGUENOS</h4>
+            <ul>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">TikTok</a></li>
+                <li><a href="#">Pinterest</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        <p>&copy; 2026 NOVAWEAR. Todos los derechos reservados.</p>
+    </div>
+</footer>
+</body>
+
+<script>
+function toggleLike(btn) {
+    btn.classList.toggle("liked");
+}
+</script>
+
+<script>
+const tallas = document.querySelectorAll(".tallas-opciones button");
+
+tallas.forEach(btn => {
+    btn.addEventListener("click", () => {
+        // quitar active a todos
+        tallas.forEach(b => b.classList.remove("active"));
+
+        // activar el que clickeaste
+        btn.classList.add("active");
+    });
+});
+</script>
+
+</html>
