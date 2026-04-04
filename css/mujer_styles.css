@@ -63,6 +63,10 @@ nav {
     background: black;
     color: white;
 }
+.menu-central a.active {
+    background: black;
+    color: white;
+}
 
 /* Iconos */
 .iconos-derecha {
