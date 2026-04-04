@@ -1,1 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaWear - Mis Favoritos</title>
+    <link rel="stylesheet" href="../css/favoritos.css">
+</head>
+<body>
 
+<header>
+    <nav>
+        <div class="logo">
+            <img src="../assets/iconos/logo.svg" alt="Logo NovaWear" class="logo-img">
+            <a href="home.html">NovaWear</a>
+        </div>
+        
+        <ul class="menu-central">
+            <li><a href="#">MUJER</a></li>
+            <li><a href="#">HOMBRE</a></li>
+            <li><a href="#">LO NUEVO</a></li>
+        </ul>
+        
+        <ul class="iconos-derecha">
+            <li>
+                <a href="favoritos.html" aria-label="Favoritos" class="icono-con-badge">
+                    <img src="../assets/iconos/favoritos.svg" alt="Favoritos" class="icono-nav">
+                    <span class="badge">1</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" aria-label="Carrito">
+                    <img src="../assets/iconos/bolsa.svg" alt="Carrito" class="icono-nav">
+                </a>
+            </li>
+            <li>
+                <a href="#" aria-label="Usuario">
+                    <img src="../assets/iconos/cuenta.svg" alt="Usuario" class="icono-nav">
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<!-- ========== SECCIÓN: CON FAVORITOS (DESCOMENTAR PARA VER) ========== -->
+<!-- 
+<main class="favoritos-contenido">
+    <h1>MIS FAVORITOS</h1>
+    <p class="favoritos-subtitulo">Tus prendas guardadas</p>
+    
+    <div class="grid-favoritos">
+        <div class="favorito-card">
+            <div class="favorito-img" style="background-image: url('../img/vestido-de-broderie.jpg')">
+                <button class="heart-btn liked" onclick="toggleLike(this)">
+                    <span class="heart-red">❤️</span>
+                </button>
+            </div>
+            <div class="favorito-info">
+                <h3>Vestido de broderie</h3>
+                <span class="precio">$180.000 COP</span>
+                <button class="btn-remover">Eliminar</button>
+            </div>
+        </div>
+    </div>
+</main>
+-->
+
+<!-- ========== SECCIÓN: SIN FAVORITOS ========== -->
+
+<main class="favoritos-vacio">
+    <div class="vacio-contenido">
+        <div class="vacio-icono">❤️</div>
+        <h1>MIS FAVORITOS</h1>
+        <p>Aún no tienes prendas favoritas</p>
+        <a href="home.html" class="btn-catalogo">VER CATÁLOGO</a>
+    </div>
+</main>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-grid">
+        <div class="footer-col">
+            <h4>NOVAWEAR</h4>
+            <p>Moda contemporánea para quienes buscan expresar su estilo único.</p>
+        </div>
+        
+        <div class="footer-col">
+            <h4>COMPRAS</h4>
+            <ul>
+                <li><a href="#">Mujer</a></li>
+                <li><a href="#">Hombre</a></li>
+                <li><a href="#">Lo Nuevo</a></li>
+                <li><a href="#">Ofertas</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-col">
+            <h4>AYUDA</h4>
+            <ul>
+                <li><a href="#">Envíos</a></li>
+                <li><a href="#">Devoluciones</a></li>
+                <li><a href="#">Tallas</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-col">
+            <h4>SÍGUENOS</h4>
+            <ul>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">TikTok</a></li>
+                <li><a href="#">Pinterest</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="copyright">
+        <p>&copy; 2026 NOVAWEAR. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+<script>
+function toggleLike(button) {
+    button.classList.toggle('liked');
+}
+</script>
+
+</body>
+</html>
