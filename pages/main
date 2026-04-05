@@ -1,1 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago - NovaWear</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Kurale&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/styles-create.css?v=1.2">
+</head>
+<body>
+    
+<header class="main-header">
+    <div class="header-container">
+        <a href="#" class="Logo">
+            <div class="Logo">
+            <img src="assets/iconos/logo.svg" alt="Logo Novawear">
+            <span class="nombre-logo">NovaWear</span>
+            </div>
+        </a>
+    </div>
+</header>
+
+<main class="contenedor-crear">
+    <h1>Crear Cuenta</h1>
+    <p class="subtitulo">Únete a lo último en moda.</p>
+    <div class="filas">
+        <div class="grupo-filas">
+            <label for="nombre">Nombre</label>
+            <input type="text" class="input-field">
+        </div>
+
+        <div class="grupo-filas">
+            <label for="apellidos">Apellidos</label>
+            <input type="text" class="input-field">
+        </div>
+    </div>
+
+    <div class="filas">
+        <div class="grupo-filas">
+            <label for="correo">Email</label>
+            <input type="email" class="input-field" id="correo">
+        </div>
+    </div>
+
+
+
+    <div class="filas">
+        <div class="grupo-filas">
+            <label for="contrasena">Contraseña</label>
+            <input type="password" class="input-field" id="contrasena">
+        </div>
+    </div>
+
+    <button class="boton-crear">Crear Cuenta</button>
+    <p class="registro">¿Ya tienes una cuenta? <a class="link-inicio">Inicia sesión aquí</a></p>
+</main>
+
+
+
+
+
+<!-- ===== FOOTER ===== -->
+<footer>
+    <div class="footer-grid">
+
+        <div class="footer-col">
+            <h4>NOVAWEAR</h4>
+            <p>Moda contemporánea para quienes buscan expresar su estilo único.</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>COMPRAS</h4>
+            <ul>
+                <li><a href="#">Mujer</a></li>
+                <li><a href="#">Hombre</a></li>
+                <li><a href="#">Lo Nuevo</a></li>
+                <li><a href="#">Ofertas</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>AYUDA</h4>
+            <ul>
+                <li><a href="#">Envíos</a></li>
+                <li><a href="#">Devoluciones</a></li>
+                <li><a href="#">Tallas</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>SÍGUENOS</h4>
+            <ul>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">TikTok</a></li>
+                <li><a href="#">Pinterest</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        <p>&copy; 2026 NOVAWEAR. Todos los derechos reservados.</p>
+    </div>
+</footer>
