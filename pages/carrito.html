@@ -1,1 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaWear - Mi Carrito</title>
+    <link rel="stylesheet" href="../css/carrito.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../assets/iconos/logo.svg" alt="Logo NovaWear" class="logo-img">
+                <a href="home.html">NovaWear</a>
+            </div>
+            
+            <ul class="menu-central">
+                <li><a href="#">MUJER</a></li>
+                <li><a href="#">HOMBRE</a></li>
+                <li><a href="#">LO NUEVO</a></li>
+            </ul>
+            
+            <ul class="iconos-derecha">
+                <li><a href="favoritos.html" aria-label="Favoritos" class="icono-con-badge" id="favoritos-link">
+                    <img src="../assets/iconos/favoritos.svg" alt="Favoritos" class="icono-nav">
+                    <span class="badge" id="favoritos-badge">0</span>
+                </a></li>
+                <li><a href="carrito.html" aria-label="Carrito" class="icono-con-badge" id="carrito-link">
+                    <img src="../assets/iconos/bolsa.svg" alt="Carrito" class="icono-nav">
+                    <span class="badge" id="carrito-badge">0</span>
+                </a></li>
+                <li><a href="#" aria-label="Usuario"><img src="../assets/iconos/cuenta.svg" alt="Usuario" class="icono-nav"></a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <!-- El contenido se cargará dinámicamente con JavaScript -->
+    <main id="carrito-main">
+        <!-- Aquí JS decide si mostrar "con productos" o "vacío" -->
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>NOVAWEAR</h4>
+                <p>Moda contemporánea para quienes buscan expresar su estilo único.</p>
+            </div>
+            
+            <div class="footer-col">
+                <h4>COMPRAS</h4>
+                <ul>
+                    <li><a href="#">Mujer</a></li>
+                    <li><a href="#">Hombre</a></li>
+                    <li><a href="#">Lo Nuevo</a></li>
+                    <li><a href="#">Ofertas</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>AYUDA</h4>
+                <ul>
+                    <li><a href="#">Envíos</a></li>
+                    <li><a href="#">Devoluciones</a></li>
+                    <li><a href="#">Tallas</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>SÍGUENOS</h4>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">TikTok</a></li>
+                    <li><a href="#">Pinterest</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2026 NOVAWEAR. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../js/carrito.js"></script>
+</body>
+</html>
