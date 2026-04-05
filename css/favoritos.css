@@ -13,7 +13,7 @@ body {
     flex-direction: column;
 }
 
-/* ===== HEADER (igual al original) ===== */
+/* ===== HEADER ===== */
 header {
     padding: 20px 5%;
     border-bottom: 1px solid #f0f0f0;
