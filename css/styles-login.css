@@ -1,0 +1,214 @@
+.main-header{
+    background-color: #ffffff;
+    border-bottom: 1px solid #f0f0f0; 
+    padding: 0 0px;
+    position: sticky; 
+    top: 0;           
+    z-index: 1000;   
+}
+
+.header-container {
+    width: 100%;
+    max-width: 1200px;
+    height: 75px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+}
+
+
+.Logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none; 
+
+}
+
+.Logo img {
+    width: 90px;  
+    height: auto; 
+    display: block;
+}
+
+.nombre-logo {
+    font-family: 'Kurale', serif;   
+    font-size: 40px;
+    font-weight: normal;
+    color: #000000;
+}
+
+
+
+
+.contenedor-login {
+    max-width: 450px; 
+    margin: 0 auto;   
+    padding: 71px 291px;
+    gap:20px;
+}
+
+
+
+h1 {
+    margin-top: 0;
+    color: #0A0A0A;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    letter-spacing: -0.9px;
+}
+
+.subtitulo {
+    color: #4A5565;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+.filas {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+    align-items: flex-start;
+}
+
+.grupo-filas label {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #4d4d4d;
+    text-align: left;
+}
+
+label[for="correo"]::after,
+label[for="contrasena"]::after {
+    content: " *";
+    color: #ef4444;
+}
+
+.input-field {
+    width: 100%;
+    height: 50px;
+    padding: 0 16px;
+    border: 2px solid #d9d9d9;
+    background-color: #fafafa;
+    font-size: 16px;
+    color: #111111;
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: #000000;
+    background-color: #ffffff;
+}
+
+.olvido-pass {
+    display: block; 
+    width: 100%;  
+    margin-bottom: 70px; 
+    margin-left: 370px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #5a5a5a;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+}
+
+
+.boton-iniciar {
+    width: 490px;
+    padding: 16px 0;
+    border: 2px solid #000000;
+    border-radius: 30px;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.boton-iniciar:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.registro {
+    margin: 24px 0 0;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    color: #5a5a5a;
+}
+
+.registro a {
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+
+
+/* ESTILOS DEL FOOTER */
+footer {
+    background: #1a1a1a; /* Negro casi total */
+    color: white;        /* Letras blancas */
+    margin-top: 200px;
+    padding: 50px 5% 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Este bloque crea las 4 columnas de información */
+.footer-grid {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Crea 4 columnas iguales */
+    gap: 30px;
+}
+
+/* Estilos para los títulos (h4) y las listas de enlaces */
+.footer-col h4 {
+    margin-bottom: 15px;
+    font-family: 'Inter', sans-serif;
+}
+
+.footer-col p {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+}
+
+.footer-col ul {
+    list-style: none; /* Quita los puntitos de las listas */
+    font-family: 'Inter', sans-serif;
+}
+
+.footer-col a {
+    color: #999;       /* Los links se ven grises por defecto */
+    text-decoration: none;
+}
+
+/* Efecto para que los links brillen al pasar el mouse */
+.footer-col a:hover {
+    color: white;
+}
+
+/* La línea delgada al final con el texto de derechos de autor */
+.copyright {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    font-family: 'Inter', sans-serif;
+}
