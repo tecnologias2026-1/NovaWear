@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NovaWear - Tienda de Moda</title>
-    <link rel="stylesheet" href="css/producto_styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
@@ -13,20 +13,20 @@
 <header>
     <nav>
         <div class="logo">
-            <img src="assets/iconos/logo.svg" alt="Logo NovaWear" class="logo-img">
+            <img src="../assets/iconos/logo.svg" alt="Logo NovaWear" class="logo-img">
             <a href="#">NovaWear</a>
         </div>
 
         <ul class="menu-central">
-            <li><a href="#">MUJER</a></li>
-            <li><a href="#">HOMBRE</a></li>
-            <li><a href="#">LO NUEVO</a></li>
+            <li><a href="../pages/mujer.html">MUJER</a></li>
+            <li><a href="../pages/hombre.html">HOMBRE</a></li>
+            <li><a href="../pages/home.html">LO NUEVO</a></li>
         </ul>
 
         <ul class="iconos-derecha">
-            <li><a href="#"><img src="assets/iconos/favoritos.svg" alt="Favoritos" class="icono-nav"></a></li>
-            <li><a href="#"><img src="assets/iconos/bolsa.svg" alt="Carrito" class="icono-nav"></a></li>
-            <li><a href="#"><img src="assets/iconos/cuenta.svg" alt="Usuario" class="icono-nav"></a></li>
+            <li><a href="../pages/favoritos.html"><img src="../assets/iconos/favoritos.svg" alt="Favoritos" class="icono-nav"></a></li>
+            <li><a href="../pages/carrito.html"><img src="../assets/iconos/bolsa.svg" alt="Carrito" class="icono-nav"></a></li>
+            <li><a href="../pages/login.html"><img src="../assets/iconos/cuenta.svg" alt="Usuario" class="icono-nav"></a></li>
         </ul>
     </nav>
 </header>
@@ -35,7 +35,7 @@
 <section class="producto">
       <div class="producto-container">
         <div class="producto-img">
-            <img src="assets/img/gaban_beige.png" alt="Gaban beige">
+            <img src="../assets/img/gaban_beige.png" alt="Gaban beige">
         </div>
 
         <!-- Info -->
@@ -72,12 +72,16 @@
              <!-- Botones -->
             <div class="acciones">
             <button class="fav-btn">
-             <img src="assets/iconos/favoritos.svg">
+                <a href="../pages/favoritos.html">
+             <img src="../assets/iconos/favoritos.svg">
+             </a>
              </button>
 
              <button class="add-cart">
-              <img src="assets/iconos/bolsa.svg">
-               Añadir al carrito
+                 <a href="../pages/carrito.html">
+              <img src="../assets/iconos/bolsa.svg">
+               </a>
+                Añadir al carrito
              </button>
             </div>
         </div>
@@ -92,10 +96,10 @@
 
         <div class="card">
            <div class="img-container">
-             <img src="assets/img/chaqueta_negra_oversize.jpg" alt="Chaqueta negra oversize">
+             <img src="../assets/img/chaqueta_negra_oversize.jpg" alt="Chaqueta negra oversize">
 
               <button class="heart-btn" onclick="toggleLike(this)">
-                     <img src="assets/iconos/favoritos.svg" alt="Like" class="heart-icon">
+                     <img src="../assets/iconos/favoritos.svg" alt="Like" class="heart-icon">
               </button>
               </div>
 
@@ -105,10 +109,10 @@
 
          <div class="card">
            <div class="img-container">
-             <img src="assets/img/camisa_lana.jpeg" alt="Camisa de lana">
+             <img src="../assets/img/camisa_lana.jpeg" alt="Camisa de lana">
 
              <button class="heart-btn" onclick="toggleLike(this)">
-                     <img src="assets/iconos/favoritos.svg" alt="Like" class="heart-icon">
+                     <img src="../assets/iconos/favoritos.svg" alt="Like" class="heart-icon">
               </button>
               </div>
            
@@ -118,10 +122,10 @@
 
         <div class="card">
            <div class="img-container">
-             <img src="assets/img/chaqueta_cafe.jpg" alt="Chaqueta café de cuero">
+             <img src="../assets/img/chaqueta_cafe.jpg" alt="Chaqueta café de cuero">
 
              <button class="heart-btn" onclick="toggleLike(this)">
-                     <img src="assets/iconos/favoritos.svg" alt="Like" class="heart-icon">
+                     <img src="../assets/iconos/favoritos.svg" alt="Like" class="heart-icon">
               </button>
               </div>
            
@@ -131,10 +135,10 @@
 
         <div class="card">
            <div class="img-container">
-             <img src="assets/img/saco_blanco.jpg" alt="Saco de lana blanco">
+             <img src="../assets/img/saco_blanco.jpg" alt="Saco de lana blanco">
 
              <button class="heart-btn" onclick="toggleLike(this)">
-                     <img src="assets/iconos/favoritos.svg" alt="Like" class="heart-icon">
+                     <img src="../assets/iconos/favoritos.svg" alt="Like" class="heart-icon">
               </button>
               </div>
            
