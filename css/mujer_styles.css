@@ -286,6 +286,19 @@ footer {
     padding-top: 20px;
 }
 
+/* Enfoque con teclado */
+a:focus,
+button:focus,
+label:focus {
+    outline: 2px solid black;
+    outline-offset: 3px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 1024px) {
     .grid-cards {
