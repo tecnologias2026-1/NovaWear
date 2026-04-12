@@ -10,6 +10,18 @@ body {
     color: #333;
 }
 
+/* Clase para accesibilidad (oculto visualmente pero visible para lectores de pantalla) */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
 /* ===== HEADER CON FLEXBOX ===== */
 header {
     padding: 20px 5%;
@@ -23,14 +35,27 @@ nav {
 }
 
 .logo {
-    font-size: 1.8rem;
-    font-weight: bold;
-    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .logo a {
     text-decoration: none;
     color: #000;
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.logo a:focus {
+    outline: 2px solid #ff4d4d;
+    outline-offset: 2px;
+}
+
+.logo-img {
+    height: 70px;
+    width: auto;
 }
 
 .menu-central {
@@ -50,15 +75,19 @@ nav {
     transition: all 0.3s ease;
 }
 
-.menu-central li a:hover {
+.menu-central li a:hover,
+.menu-central li a:focus {
     background-color: black;
     color: white;
+    outline: 2px solid #ff4d4d;
+    outline-offset: 2px;
 }
 
 .iconos-derecha {
     display: flex;
     gap: 20px;
     list-style: none;
+    align-items: center;
 }
 
 .iconos-derecha li a {
@@ -66,15 +95,56 @@ nav {
     color: black;
     font-size: 1.3rem;
     transition: transform 0.2s;
+    position: relative;
+    display: inline-block;
 }
 
-.iconos-derecha li a:hover {
+.iconos-derecha li a:hover,
+.iconos-derecha li a:focus {
     transform: scale(1.1);
+    outline: 2px solid #ff4d4d;
+    outline-offset: 4px;
+}
+
+/* Clase específica para el ícono de usuario */
+.icono-usuario {
+    display: inline-block;
+}
+
+.icono-nav {
+    width: 24px;
+    height: 24px;
+    display: block;
+    pointer-events: none;
+}
+
+/* ===== BADGES para favoritos y carrito ===== */
+.icono-con-badge {
+    position: relative;
+    display: inline-block;
+}
+
+.badge {
+    position: absolute;
+    top: -10px;
+    right: -12px;
+    background-color: #ff4d4d;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: bold;
+    min-width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 4px;
+    pointer-events: none;
 }
 
 /* ===== HERO KENDALL ===== */
 .hero-kendall {
-    margin: 0; /* Cambiado de 30px 5% a 0 */
+    margin: 0;
     background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
                 url('../img/kendalljenner.webp');
     background-size: cover;
@@ -92,7 +162,7 @@ nav {
     padding: 20px;
 }
 
-.hero-contenido h2 {
+.hero-contenido h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
@@ -109,10 +179,11 @@ nav {
     gap: 20px;
     justify-content: center;
 }
+
 .hero-btn {
     padding: 15px 30px;
     border: 2px solid white;
-    border-radius: 0px; /* Cambiado de 30px a 0px para que sea cuadrado */
+    border-radius: 0px;
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
@@ -121,26 +192,15 @@ nav {
     color: white;
 }
 
-.btn-mujer {
-    background-color: transparent;
-    color: white;
-}
-
-.btn-hombre {
-    background-color: transparent;
-    color: white;
-}
-
-.btn-mujer:hover {
+.btn-mujer:hover,
+.btn-mujer:focus,
+.btn-hombre:hover,
+.btn-hombre:focus {
     background-color: white;
     color: black;
     transform: translateY(-3px);
-}
-
-.btn-hombre:hover {
-    background-color: white;
-    color: black;
-    transform: translateY(-3px);
+    outline: 2px solid #ff4d4d;
+    outline-offset: 2px;
 }
 
 /* ===== COLECCIONES DESTACADAS ===== */
@@ -203,24 +263,17 @@ nav {
     z-index: 2;
 }
 
+.heart-btn:hover,
+.heart-btn:focus {
+    transform: scale(1.1);
+    outline: 2px solid #ff4d4d;
+    outline-offset: 2px;
+}
+
 .heart-icon {
     width: 22px;
     height: 22px;
     display: block;
-}
-
-/* Estado like (después de hacer clic) */
-.heart-btn.liked {
-    background-color: black;
-}
-
-.heart-btn.liked .heart-icon {
-    content: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23ff4d4d"%3E%3Cpath d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"%3E%3C/path%3E%3C/svg%3E');
-    /* Ese es un corazón rojo SVG */
-}
-
-.heart-btn:hover {
-    transform: scale(1.1);
 }
 
 .card-info {
@@ -239,7 +292,27 @@ nav {
     font-size: 1.2rem;
 }
 
-/* ===== SECCIÓN ARIANA Y TOM ===== */
+.btn-agregar-carrito {
+    margin-top: 12px;
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn-agregar-carrito:hover,
+.btn-agregar-carrito:focus {
+    background-color: #333;
+    transform: translateY(-2px);
+    outline: 2px solid #ff4d4d;
+    outline-offset: 2px;
+}
+
+/* ===== SECCIÓN CELEBRIDADES ===== */
 .celebridades {
     padding: 40px 5%;
     display: grid;
@@ -280,11 +353,6 @@ nav {
     margin-bottom: 10px;
 }
 
-.celebridad-contenido p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-
 .btn-explorar {
     background-color: transparent;
     color: white;
@@ -295,10 +363,13 @@ nav {
     transition: all 0.3s;
 }
 
-.btn-explorar:hover {
+.btn-explorar:hover,
+.btn-explorar:focus {
     background-color: white;
     color: black;
     transform: translateY(-3px);
+    outline: 2px solid #ff4d4d;
+    outline-offset: 2px;
 }
 
 /* ===== SUSCRIPCIÓN ===== */
@@ -338,6 +409,8 @@ nav {
 
 .suscripcion-form input:focus {
     border-color: black;
+    outline: 2px solid #ff4d4d;
+    outline-offset: 2px;
 }
 
 .suscripcion-form button {
@@ -351,9 +424,12 @@ nav {
     transition: all 0.3s;
 }
 
-.suscripcion-form button:hover {
+.suscripcion-form button:hover,
+.suscripcion-form button:focus {
     background-color: #333;
     transform: translateY(-3px);
+    outline: 2px solid #ff4d4d;
+    outline-offset: 2px;
 }
 
 /* ===== FOOTER ===== */
@@ -389,8 +465,11 @@ footer {
     transition: color 0.3s;
 }
 
-.footer-col a:hover {
+.footer-col a:hover,
+.footer-col a:focus {
     color: white;
+    outline: 2px solid #ff4d4d;
+    outline-offset: 2px;
 }
 
 .copyright {
@@ -409,24 +488,6 @@ footer {
     .footer-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-}
-/* Logo con ícono */
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.logo-img {
-    height: 100px;
-    width: auto;
-}
-
-/* Íconos de navegación */
-.icono-nav {
-    width: 24px;
-    height: 24px;
-    display: block;
 }
 
 @media (max-width: 768px) {
