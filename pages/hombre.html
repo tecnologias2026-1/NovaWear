@@ -11,42 +11,42 @@
 
 <!-- ===== HEADER ===== -->
 <header>
-    <nav>
+    <nav aria-label="Navegación principal">
         <div class="logo">
             <img src="../assets/iconos/logo.svg" alt="Logo NovaWear" class="logo-img">
-            <a href="#">NovaWear</a>
+            <a href="#" aria-label="Ir al inicio">NovaWear</a>
         </div>
 
         <ul class="menu-central">
         
-            <li><a href="../pages/mujer.html">MUJER</a></li>
-            <li><a href="#" class="active">HOMBRE</a></li>
-            <li><a href="../pages/home.html">LO NUEVO</a></li>
+            <li><a href="../pages/mujer.html" aria-current="page">MUJER</a></li>
+            <li><a href="#" class="active" aria-current="page">HOMBRE</a></li>
+            <li><a href="../pages/home.html" aria-current="page">LO NUEVO</a></li>
         </ul>
 
         <ul class="iconos-derecha">
-            <li><a href="../pages/favoritos.html"><img src="../assets/iconos/favoritos.svg" alt="Favoritos" class="icono-nav"></a></li>
-            <li><a href="../pages/carrito.html"><img src="../assets/iconos/bolsa.svg" alt="Carrito" class="icono-nav"></a></li>
-            <li><a href="../pages/login.html"><img src="../assets/iconos/cuenta.svg" alt="Usuario" class="icono-nav"></a></li>
+            <li><a href="../pages/favoritos.html" aria-label="Ver favoritos"><img src="../assets/iconos/favoritos.svg" alt="Favoritos" class="icono-nav"></a></li>
+            <li><a href="../pages/carrito.html" aria-label="Ver carrito"><img src="../assets/iconos/bolsa.svg" alt="Carrito" class="icono-nav"></a></li>
+            <li><a href="../pages/login.html" aria-label="Iniciar sesión"><img src="../assets/iconos/cuenta.svg" alt="Usuario" class="icono-nav"></a></li>
         </ul>
     </nav>
 </header>
 
 <!-- ===== MAIN ===== -->
-<section class="coleccion-hombre">
+<main class="coleccion-hombre">
 
     <h1>Colección de hombre</h1>
 
     <!-- Botón -->
    <input type="checkbox" id="toggle-filtros" hidden>
 
-   <label for="toggle-filtros" class="filtros">
+   <label for="toggle-filtros" class="filtros" role="button" tabindex="0" aria-controls="panel-filtros">
     <img src="../assets/iconos/filtros.svg" alt="Filtros">
     <span>Filtros</span>
    </label>
 
     <!-- dropdown-filtros -->
-  <div class="dropdown-filtros">
+  <div class="dropdown-filtros" id="panel-filtros">
 
     <h3>Categoría</h3>
      <label><input type="checkbox"> Camisetas</label>
@@ -80,13 +80,13 @@
     <!-- GRID DE PRODUCTOS -->
     <div class="grid-cards">
 
-        <div class="card">
+        <div class="card" tabindex="0">
            <div class="img-container">
             <a href="../pages/producto.html">
-             <img src="../assets/img/camiseta_verde_oliva.jpg" alt="Camiseta verde oliva">
+             <img src="../img/camiseta_verde_oliva.jpg" alt="Camiseta verde oliva">
              </a>
 
-              <button class="heart-btn" onclick="toggleLike(this)">
+              <button class="heart-btn" onclick="toggleLike(this)" aria-pressed="false" aria-label="Agregar a favoritos">
                      <img src="../assets/iconos/favoritos.svg" alt="Like" class="heart-icon">
               </button>
               </div>
@@ -95,13 +95,13 @@
             <p class="price">$50.000</p>
         </div>
 
-         <div class="card">
+         <div class="card" tabindex="0">
            <div class="img-container">
             <a href="../pages/producto.html">
-             <img src="../assets/img/saco_gris.jpg" alt="Saco gris">
+             <img src="../img/saco_gris.jpg" alt="Saco gris">
              </a>
 
-             <button class="heart-btn" onclick="toggleLike(this)">
+             <button class="heart-btn" onclick="toggleLike(this)" aria-pressed="false" aria-label="Agregar a favoritos">
                      <img src="../assets/iconos/favoritos.svg" alt="Like" class="heart-icon">
               </button>
               </div>
@@ -110,13 +110,13 @@
             <p class="price">$159.000</p>
         </div>
 
-        <div class="card">
+        <div class="card" tabindex="0">
            <div class="img-container">
             <a href="../pages/producto.html">
-             <img src="../assets/img/chaqueta_negra_h.jpg" alt="Chaqueta negra">
+             <img src="../img/chaqueta_negra_h.jpg" alt="Chaqueta negra">
              </a>
 
-             <button class="heart-btn" onclick="toggleLike(this)">
+             <button class="heart-btn" onclick="toggleLike(this)" aria-pressed="false" aria-label="Agregar a favoritos">
                      <img src="../assets/iconos/favoritos.svg" alt="Like" class="heart-icon">
               </button>
               </div>
@@ -125,13 +125,13 @@
             <p class="price">$319.000</p>
         </div>
 
-        <div class="card">
+        <div class="card" tabindex="0">
            <div class="img-container">
              <a href="../pages/producto.html">
-             <img src="../assets/img/saco_tejido.jpg" alt="Saco tejido">
+             <img src="../img/saco_tejido.jpg" alt="Saco tejido">
              </a>
 
-             <button class="heart-btn" onclick="toggleLike(this)">
+             <button class="heart-btn" onclick="toggleLike(this)" aria-pressed="false" aria-label="Agregar a favoritos">
                      <img src="../assets/iconos/favoritos.svg" alt="Like" class="heart-icon">
               </button>
               </div>
@@ -140,13 +140,13 @@
             <p class="price">$199.000</p>
         </div>
 
-         <div class="card">
+         <div class="card" tabindex="0">
            <div class="img-container">
              <a href="../pages/producto.html">
-              <img src="../assets/img/camiseta_blanca.jpg" alt="Camiseta blanca">
+              <img src="../img/camiseta_blanca.jpg" alt="Camiseta blanca">
              </a>
 
-             <button class="heart-btn" onclick="toggleLike(this)">
+             <button class="heart-btn" onclick="toggleLike(this)" aria-pressed="false" aria-label="Agregar a favoritos">
                      <img src="../assets/iconos/favoritos.svg" alt="Like" class="heart-icon">
               </button>
             </div>
@@ -155,13 +155,13 @@
             <p class="price">$50.000</p>
         </div>
 
-         <div class="card">
+         <div class="card" tabindex="0">
            <div class="img-container">
              <a href="../pages/producto.html">
-             <img src="../assets/img/gaban_negro.jpg" alt="Gaban negro">
+             <img src="../img/gaban_negro.jpg" alt="Gaban negro">
              </a>
 
-             <button class="heart-btn" onclick="toggleLike(this)">
+             <button class="heart-btn" onclick="toggleLike(this)" aria-pressed="false" aria-label="Agregar a favoritos">
                      <img src="../assets/iconos/favoritos.svg" alt="Like" class="heart-icon">
               </button>
               </div>
@@ -170,13 +170,13 @@
             <p class="price">$129.000</p>
         </div>
 
-         <div class="card">
+         <div class="card" tabindex="0">
            <div class="img-container">
             <a href="../pages/producto.html">
-             <img src="../assets/img/camiseta_vinotinto.jpg" alt="Camiseta vinotinto">
+             <img src="../img/camiseta_vinotinto.jpg" alt="Camiseta vinotinto">
              </a>
 
-             <button class="heart-btn" onclick="toggleLike(this)">
+             <button class="heart-btn" onclick="toggleLike(this)" aria-pressed="false" aria-label="Agregar a favoritos">
                      <img src="../assets/iconos/favoritos.svg" alt="Like" class="heart-icon">
               </button>
               </div>
@@ -186,13 +186,13 @@
             <p class="price">$90.000</p>
         </div>
 
-         <div class="card">
+         <div class="card" tabindex="0">
            <div class="img-container">
             <a href="../pages/producto.html">
-              <img src="../assets/img/chaqueta_jean.jpg" alt="Chaqueta de jean">
+              <img src="../img/chaqueta_jean.jpg" alt="Chaqueta de jean">
              </a>
 
-             <button class="heart-btn" onclick="toggleLike(this)">
+             <button class="heart-btn" onclick="toggleLike(this)" aria-pressed="false" aria-label="Agregar a favoritos">
                      <img src="../assets/iconos/favoritos.svg" alt="Like" class="heart-icon">
               </button>
               </div>
@@ -204,7 +204,7 @@
     </div>
 
     
-</section>
+</main>
 
 <!-- ===== FOOTER ===== -->
 <footer>
@@ -256,6 +256,9 @@
 <script>
 function toggleLike(btn) {
     btn.classList.toggle("liked");
+
+    let estado = btn.classList.contains("liked");
+    btn.setAttribute("aria-pressed", estado);
 }
 </script>
 
