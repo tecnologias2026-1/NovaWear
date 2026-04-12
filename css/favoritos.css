@@ -32,7 +32,7 @@ nav {
 }
 
 .logo-img {
-    height: 100px;
+    height: 70px; 
     width: auto;
 }
 
@@ -42,6 +42,11 @@ nav {
     font-size: 1.8rem;
     font-weight: bold;
     letter-spacing: 1px;
+}
+
+.logo a:focus {
+    outline: 2px solid #ff4d4d;
+    outline-offset: 2px;
 }
 
 .menu-central {
@@ -61,9 +66,12 @@ nav {
     transition: all 0.3s ease;
 }
 
-.menu-central li a:hover {
+.menu-central li a:hover,
+.menu-central li a:focus {
     background-color: black;
     color: white;
+    outline: 2px solid #ff4d4d;
+    outline-offset: 2px;
 }
 
 .iconos-derecha {
@@ -79,19 +87,24 @@ nav {
     font-size: 1.3rem;
     transition: transform 0.2s;
     position: relative;
+    display: inline-block;
 }
 
-.iconos-derecha li a:hover {
+.iconos-derecha li a:hover,
+.iconos-derecha li a:focus {
     transform: scale(1.1);
+    outline: 2px solid #ff4d4d;
+    outline-offset: 4px;
 }
 
 .icono-nav {
     width: 24px;
     height: 24px;
     display: block;
+    pointer-events: none;
 }
 
-/* Badge del corazón (numerito) */
+/* Badge */
 .icono-con-badge {
     position: relative;
 }
@@ -104,12 +117,14 @@ nav {
     color: white;
     font-size: 0.7rem;
     font-weight: bold;
-    width: 18px;
+    min-width: 18px;
     height: 18px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0 4px;
+    pointer-events: none;
 }
 
 /* ===== SECCIÓN CON FAVORITOS ===== */
@@ -143,7 +158,8 @@ nav {
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     transition: transform 0.3s;
     position: relative;
-    border-radius: 0px;
+    border-radius: 12px;
+    overflow: hidden;
 }
 
 .favorito-card:hover {
@@ -155,7 +171,6 @@ nav {
     background-size: cover;
     background-position: center;
     position: relative;
-    border-radius: 0px;
 }
 
 .heart-btn {
@@ -181,8 +196,12 @@ nav {
     color: #ff4d4d;
 }
 
-.heart-btn:hover {
+.heart-btn:hover,
+.heart-btn:focus {
     transform: scale(1.1);
+    outline: 2px solid #ff4d4d;
+    outline-offset: 2px;
+    background-color: #333;
 }
 
 .favorito-info {
@@ -212,64 +231,19 @@ nav {
     transition: all 0.3s;
     font-size: 0.9rem;
     width: 100%;
+    border-radius: 30px;
 }
 
-.btn-remover:hover {
+.btn-remover:hover,
+.btn-remover:focus {
     background-color: #ff4d4d;
     color: white;
     border-color: #ff4d4d;
+    outline: 2px solid #ff4d4d;
+    outline-offset: 2px;
 }
 
-/* ===== SECCIÓN SIN FAVORITOS ===== */
-.favoritos-vacio {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 80px 20px;
-    text-align: center;
-}
-
-.vacio-contenido {
-    max-width: 500px;
-}
-
-.vacio-icono {
-    font-size: 5rem;
-    margin-bottom: 20px;
-    opacity: 0.5;
-}
-
-.favoritos-vacio h1 {
-    font-size: 2rem;
-    margin-bottom: 15px;
-    color: #333;
-}
-
-.favoritos-vacio p {
-    color: #666;
-    margin-bottom: 30px;
-    font-size: 1.1rem;
-}
-
-.btn-catalogo {
-    background-color: black;
-    color: white;
-    border: none;
-    padding: 15px 40px;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s;
-    border-radius: 0px;
-}
-
-.btn-catalogo:hover {
-    background-color: #333;
-    transform: translateY(-3px);
-}
-
-/* ===== FOOTER (igual al original) ===== */
+/* ===== FOOTER ===== */
 footer {
     background-color: #1a1a1a;
     color: white;
@@ -303,8 +277,11 @@ footer {
     transition: color 0.3s;
 }
 
-.footer-col a:hover {
+.footer-col a:hover,
+.footer-col a:focus {
     color: white;
+    outline: 2px solid #ff4d4d;
+    outline-offset: 2px;
 }
 
 .copyright {
