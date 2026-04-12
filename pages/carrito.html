@@ -12,32 +12,131 @@
         <nav>
             <div class="logo">
                 <img src="../assets/iconos/logo.svg" alt="Logo NovaWear" class="logo-img">
-                <a href="home.html">NovaWear</a>
+                <a href="home.html" tabindex="0">NovaWear</a>
             </div>
             
             <ul class="menu-central">
-                <li><a href="#">MUJER</a></li>
-                <li><a href="#">HOMBRE</a></li>
-                <li><a href="#">LO NUEVO</a></li>
+                <li><a href="#" tabindex="0">MUJER</a></li>
+                <li><a href="#" tabindex="0">HOMBRE</a></li>
+                <li><a href="#" tabindex="0">LO NUEVO</a></li>
             </ul>
             
             <ul class="iconos-derecha">
-                <li><a href="favoritos.html" aria-label="Favoritos" class="icono-con-badge" id="favoritos-link">
+                <li><a href="favoritos.html" aria-label="Favoritos" class="icono-con-badge" tabindex="0">
                     <img src="../assets/iconos/favoritos.svg" alt="Favoritos" class="icono-nav">
-                    <span class="badge" id="favoritos-badge">0</span>
+                    <span class="badge" aria-label="4 favoritos">4</span>
                 </a></li>
-                <li><a href="carrito.html" aria-label="Carrito" class="icono-con-badge" id="carrito-link">
+                <li><a href="carrito.html" aria-label="Carrito" class="icono-con-badge" tabindex="0">
                     <img src="../assets/iconos/bolsa.svg" alt="Carrito" class="icono-nav">
-                    <span class="badge" id="carrito-badge">0</span>
+                    <span class="badge" aria-label="3 productos en carrito">3</span>
                 </a></li>
-                <li><a href="#" aria-label="Usuario"><img src="../assets/iconos/cuenta.svg" alt="Usuario" class="icono-nav"></a></li>
+                <li><a href="#" aria-label="Usuario" tabindex="0">
+                    <img src="../assets/iconos/cuenta.svg" alt="Usuario" class="icono-nav">
+                </a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- El contenido se cargará dinámicamente con JavaScript -->
-    <main id="carrito-main">
-        <!-- Aquí JS decide si mostrar "con productos" o "vacío" -->
+    <!-- MAIN con CARRITO LLENO (sin JavaScript) -->
+    <main>
+        <section class="carrito-contenido" aria-labelledby="carrito-titulo">
+            <h1 id="carrito-titulo">MI CARRITO</h1>
+            <p class="carrito-subtitulo">Revisa tus productos antes de comprar</p>
+            
+            <div class="carrito-grid">
+                <!-- Lista de productos -->
+                <div class="productos-lista">
+                    
+                    <!-- Producto 1 -->
+                    <div class="carrito-item">
+                        <div class="item-img" style="background-image: url('../img/Camiseta estilo polo.jpg')" role="img" aria-label="Camiseta Polo Azul"></div>
+                        <div class="item-detalles">
+                            <h3>Camiseta Polo Azul</h3>
+                            <p class="item-precio">$55,999 COP</p>
+                            <div class="item-cantidad">
+                                <button class="cantidad-btn" aria-label="Disminuir cantidad" tabindex="0">-</button>
+                                <span class="cantidad-num">1</span>
+                                <button class="cantidad-btn" aria-label="Aumentar cantidad" tabindex="0">+</button>
+                            </div>
+                            <button class="item-eliminar" tabindex="0">Eliminar</button>
+                        </div>
+                        <div class="item-subtotal">
+                            $55,999 COP
+                        </div>
+                    </div>
+
+                    <!-- Producto 2 -->
+                    <div class="carrito-item">
+                        <div class="item-img" style="background-image: url('../img/ChaquetadecueroOversize.jpg')" role="img" aria-label="Chaqueta tipo Bomber Oversize en Cuero"></div>
+                        <div class="item-detalles">
+                            <h3>Chaqueta tipo Bomber Oversize en Cuero</h3>
+                            <p class="item-precio">$250,000 COP</p>
+                            <div class="item-cantidad">
+                                <button class="cantidad-btn" aria-label="Disminuir cantidad" tabindex="0">-</button>
+                                <span class="cantidad-num">1</span>
+                                <button class="cantidad-btn" aria-label="Aumentar cantidad" tabindex="0">+</button>
+                            </div>
+                            <button class="item-eliminar" tabindex="0">Eliminar</button>
+                        </div>
+                        <div class="item-subtotal">
+                            $250,000 COP
+                        </div>
+                    </div>
+
+                    <!-- Producto 3 -->
+                    <div class="carrito-item">
+                        <div class="item-img" style="background-image: url('../img/Vestidodebroderie.jpg')" role="img" aria-label="Vestido de broderie"></div>
+                        <div class="item-detalles">
+                            <h3>Vestido de broderie</h3>
+                            <p class="item-precio">$180,000 COP</p>
+                            <div class="item-cantidad">
+                                <button class="cantidad-btn" aria-label="Disminuir cantidad" tabindex="0">-</button>
+                                <span class="cantidad-num">2</span>
+                                <button class="cantidad-btn" aria-label="Aumentar cantidad" tabindex="0">+</button>
+                            </div>
+                            <button class="item-eliminar" tabindex="0">Eliminar</button>
+                        </div>
+                        <div class="item-subtotal">
+                            $360,000 COP
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resumen de compra (Order Summary) -->
+                <aside class="order-summary" aria-label="Resumen de compra">
+                    <h3>RESUMEN DE COMPRA</h3>
+                    
+                    <div class="summary-row">
+                        <span>Subtotal</span>
+                        <span>$665,999 COP</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Envío</span>
+                        <span>$15,000 COP</span>
+                    </div>
+                    <div class="summary-row total">
+                        <span>TOTAL</span>
+                        <span>$680,999 COP</span>
+                    </div>
+
+                    <div class="metodos-pago">
+                        <p>Métodos de pago aceptados:</p>
+                        <div class="pago-iconos">
+                            <span>Visa</span>
+                            <span>Mastercard</span>
+                            <span>American Express</span>
+                            <span>PSE</span>
+                            <span>Nequi</span>
+                        </div>
+                    </div>
+
+                    <div class="carrito-botones">
+                        <button class="btn-volver" tabindex="0">← SEGUIR COMPRANDO</button>
+                        <button class="btn-proceder" tabindex="0">PROCEDER AL PAGO</button>
+                    </div>
+                </aside>
+            </div>
+        </section>
     </main>
 
     <!-- FOOTER -->
@@ -51,30 +150,30 @@
             <div class="footer-col">
                 <h4>COMPRAS</h4>
                 <ul>
-                    <li><a href="#">Mujer</a></li>
-                    <li><a href="#">Hombre</a></li>
-                    <li><a href="#">Lo Nuevo</a></li>
-                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="#" tabindex="0">Mujer</a></li>
+                    <li><a href="#" tabindex="0">Hombre</a></li>
+                    <li><a href="#" tabindex="0">Lo Nuevo</a></li>
+                    <li><a href="#" tabindex="0">Ofertas</a></li>
                 </ul>
             </div>
             
             <div class="footer-col">
                 <h4>AYUDA</h4>
                 <ul>
-                    <li><a href="#">Envíos</a></li>
-                    <li><a href="#">Devoluciones</a></li>
-                    <li><a href="#">Tallas</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#" tabindex="0">Envíos</a></li>
+                    <li><a href="#" tabindex="0">Devoluciones</a></li>
+                    <li><a href="#" tabindex="0">Tallas</a></li>
+                    <li><a href="#" tabindex="0">Contacto</a></li>
                 </ul>
             </div>
             
             <div class="footer-col">
                 <h4>SÍGUENOS</h4>
                 <ul>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">TikTok</a></li>
-                    <li><a href="#">Pinterest</a></li>
+                    <li><a href="#" tabindex="0">Instagram</a></li>
+                    <li><a href="#" tabindex="0">Facebook</a></li>
+                    <li><a href="#" tabindex="0">TikTok</a></li>
+                    <li><a href="#" tabindex="0">Pinterest</a></li>
                 </ul>
             </div>
         </div>
@@ -84,6 +183,5 @@
         </div>
     </footer>
 
-    <script src="../js/carrito.js"></script>
 </body>
 </html>
