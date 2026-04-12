@@ -13,7 +13,7 @@ body {
     flex-direction: column;
 }
 
-/* ===== HEADER (igual al original) ===== */
+/* ===== HEADER ===== */
 header {
     padding: 20px 5%;
     border-bottom: 1px solid #f0f0f0;
@@ -44,6 +44,11 @@ nav {
     letter-spacing: 1px;
 }
 
+.logo a:focus {
+    outline: 2px solid #ff4d4d;
+    outline-offset: 2px;
+}
+
 .menu-central {
     display: flex;
     gap: 15px;
@@ -61,9 +66,12 @@ nav {
     transition: all 0.3s ease;
 }
 
-.menu-central li a:hover {
+.menu-central li a:hover,
+.menu-central li a:focus {
     background-color: black;
     color: white;
+    outline: 2px solid #ff4d4d;
+    outline-offset: 2px;
 }
 
 .iconos-derecha {
@@ -79,19 +87,24 @@ nav {
     font-size: 1.3rem;
     transition: transform 0.2s;
     position: relative;
+    display: inline-block;
 }
 
-.iconos-derecha li a:hover {
+.iconos-derecha li a:hover,
+.iconos-derecha li a:focus {
     transform: scale(1.1);
+    outline: 2px solid #ff4d4d;
+    outline-offset: 4px;
 }
 
 .icono-nav {
     width: 24px;
     height: 24px;
     display: block;
+    pointer-events: none;
 }
 
-/* Badge del corazón y carrito */
+/* Badge */
 .icono-con-badge {
     position: relative;
 }
@@ -111,6 +124,7 @@ nav {
     align-items: center;
     justify-content: center;
     padding: 0 4px;
+    pointer-events: none;
 }
 
 /* ===== SECCIÓN CARRITO CON PRODUCTOS ===== */
@@ -192,10 +206,13 @@ nav {
     transition: all 0.2s;
 }
 
-.cantidad-btn:hover {
+.cantidad-btn:hover,
+.cantidad-btn:focus {
     background: black;
     color: white;
     border-color: black;
+    outline: 2px solid #ff4d4d;
+    outline-offset: 2px;
 }
 
 .cantidad-num {
@@ -214,8 +231,11 @@ nav {
     margin-top: 5px;
 }
 
-.item-eliminar:hover {
+.item-eliminar:hover,
+.item-eliminar:focus {
     color: #ff4d4d;
+    outline: 2px solid #ff4d4d;
+    outline-offset: 2px;
 }
 
 .item-subtotal {
@@ -300,9 +320,12 @@ nav {
     text-align: center;
 }
 
-.btn-volver:hover {
+.btn-volver:hover,
+.btn-volver:focus {
     background: black;
     color: white;
+    outline: 2px solid #ff4d4d;
+    outline-offset: 2px;
 }
 
 .btn-proceder {
@@ -315,57 +338,12 @@ nav {
     transition: all 0.3s;
 }
 
-.btn-proceder:hover {
+.btn-proceder:hover,
+.btn-proceder:focus {
     background: #333;
     transform: translateY(-2px);
-}
-
-/* ===== SECCIÓN CARRITO VACÍO ===== */
-.carrito-vacio {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 80px 20px;
-    text-align: center;
-}
-
-.vacio-contenido {
-    max-width: 500px;
-}
-
-.vacio-icono {
-    font-size: 5rem;
-    margin-bottom: 20px;
-    opacity: 0.5;
-}
-
-.carrito-vacio h1 {
-    font-size: 2rem;
-    margin-bottom: 15px;
-    color: #333;
-}
-
-.carrito-vacio p {
-    color: #666;
-    margin-bottom: 30px;
-    font-size: 1.1rem;
-}
-
-.btn-catalogo {
-    background-color: black;
-    color: white;
-    border: none;
-    padding: 15px 40px;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s;
-}
-
-.btn-catalogo:hover {
-    background-color: #333;
-    transform: translateY(-3px);
+    outline: 2px solid #ff4d4d;
+    outline-offset: 2px;
 }
 
 /* ===== FOOTER ===== */
@@ -402,8 +380,11 @@ footer {
     transition: color 0.3s;
 }
 
-.footer-col a:hover {
+.footer-col a:hover,
+.footer-col a:focus {
     color: white;
+    outline: 2px solid #ff4d4d;
+    outline-offset: 2px;
 }
 
 .copyright {
