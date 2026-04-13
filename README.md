@@ -92,7 +92,7 @@ Para mantener el proyecto ordenado y evitar confusiones entre los integrantes de
 
 - **`/pages`** → La carpeta pages contiene todos los archivos HTML del sitio. Decidimos poner todas las páginas en una sola carpeta para tenerlas localizadas fácilmente y que cada quien trabajara en su propia página sin afectar la de los demás.
 
-- **`/css`** → La carpeta css contiene los estilos de cada página. Separamos los CSS por página para que el código esté más limpio y si alguien necesita cambiar algo del carrito o l apagina que este trabajando, solo modifica su propio archivo sin dañar los demas. 
+- **`/css`** → La carpeta css contiene los estilos de cada página. Separamos los CSS por página para que el código esté más limpio y si alguien necesita cambiar algo del carrito o la página en la que esté trabajando, solo modifica su propio archivo sin dañar a los demás.
 
 - **`/assets/iconos`** → La carpeta assets tiene adentro una subcarpeta llamada iconos donde guardamos todos los íconos en formato SVG, como el logo, el corazón de favoritos, la bolsa del carrito y el ícono de usuario. Agrupar todos los íconos en un solo lugar hace que todos los integrantes del equipo los encuentren fácilmente.
 
