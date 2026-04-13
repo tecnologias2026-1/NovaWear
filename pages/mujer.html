@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaWear - Tienda de Moda</title>
+    <link rel="stylesheet" href="../css/mujer_styles.css">
+</head>
+
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+    <nav aria-label="Navegación principal">
+        <div class="logo">
+            <img src="../assets/iconos/logo.svg" alt="Logo NovaWear" class="logo-img">
+            <a href="#" aria-label="Ir al inicio">NovaWear</a>
+        </div>
+
+        <ul class="menu-central">
+            <li><a href="#" class="active" aria-current="page">MUJER</a></li>
+            <li><a href="../pages/hombre.html" aria-current="page">HOMBRE</a></li>
+            <li><a href="../pages/home.html" aria-current="page">LO NUEVO</a></li>
+        </ul>
+
+        <ul class="iconos-derecha">
+            <li><a href="../pages/favoritos.html" aria-label="Ver favoritos"><img src="../assets/iconos/favoritos.svg" alt="Favoritos" class="icono-nav"></a></li>
+            <li><a href="../pages/carrito.html" aria-label="Ver carrito"><img src="../assets/iconos/bolsa.svg" alt="Carrito" class="icono-nav"></a></li>
+            <li><a href="../pages/login.html" aria-label="Iniciar sesión"><img src="../assets/iconos/cuenta.svg" alt="Usuario" class="icono-nav"></a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- ===== MAIN ===== -->
+<main class="coleccion-mujer">
+
+    <h1>Colección de mujer</h1>
+
+    <!-- Botón -->
+   <input type="checkbox" id="toggle-filtros" hidden>
+
+   <label for="toggle-filtros" class="filtros" role="button" tabindex="0" aria-controls="panel-filtros">
+    <img src="../assets/iconos/filtros.svg" alt="Filtros">
+    <span>Filtros</span>
+   </label>
+
+    <!-- dropdown-filtros -->
+  <div class="dropdown-filtros" id="panel-filtros">
+
+    <h3>Categoría</h3>
+    <label><input type="checkbox"> Chaquetas</label>
+    <label><input type="checkbox"> Vestidos</label>
+    <label><input type="checkbox"> Pantalones</label>
+    <label><input type="checkbox"> Tops</label>
+
+    <hr>
+
+    <h3>Talla</h3>
+    <label><input type="checkbox"> S</label>
+    <label><input type="checkbox"> M</label>
+    <label><input type="checkbox"> L</label>
+    <label><input type="checkbox"> XL</label>
+    <label><input type="checkbox"> XS</label>
+
+    <hr>
+
+    <h3>Precio</h3>
+    <label><input type="checkbox"> Menos de $50000</label>
+    <label><input type="checkbox"> $50000 - $100000</label>
+    <label><input type="checkbox"> $100000 - $150000</label>
+    <label><input type="checkbox"> $150000 - $200000</label>
+    <label><input type="checkbox"> Más de $200000</label>
+
+    <label for="toggle-filtros" class="btn-aplicar">
+    Aplicar filtros
+    </label>
+
+  </div>
+
+    <!-- GRID DE PRODUCTOS -->
+    <div class="grid-cards">
+
+        <div class="card" tabindex="0">
+           <div class="img-container">
+            <a href="../pages/producto.html">
+             <img src="../img/gaban_beige.png" alt="Gaban beige minimalista">
+             </a>
+
+              <button class="heart-btn" onclick="toggleLike(this)" aria-pressed="false" aria-label="Agregar a favoritos">
+                     <img src="../assets/iconos/favoritos.svg" alt="Like" class="heart-icon">
+              </button>
+              </div>
+
+            <p class="name">Gaban beige minimalista</p>
+            <p class="price">$289.000</p>
+        </div>
+
+         <div class="card" tabindex="0">
+           <div class="img-container">
+            <a href="../pages/producto.html">
+             <img src="../img/camisa_blanca.jpg" alt="Camisa blanca basica">
+             </a>
+
+             <button class="heart-btn" onclick="toggleLike(this)" aria-pressed="false" aria-label="Agregar a favoritos">
+                     <img src="../assets/iconos/favoritos.svg" alt="Like" class="heart-icon">
+              </button>
+              </div>
+           
+            <p class="name">Camisa blanca básica</p>
+            <p class="price">$59.000</p>
+        </div>
+
+        <div class="card" tabindex="0">
+           <div class="img-container">
+            <a href="../pages/producto.html">
+             <img src="../img/conjunto_negro.jpg" alt="Conjunto negro moderno">
+             </a>
+
+             <button class="heart-btn" onclick="toggleLike(this)" aria-pressed="false" aria-label="Agregar a favoritos">
+                     <img src="../assets/iconos/favoritos.svg" alt="Like" class="heart-icon">
+              </button>
+              </div>
+           
+            <p class="name">Conjunto negro moderno</p>
+            <p class="price">$319.000</p>
+        </div>
+
+        <div class="card" tabindex="0">
+           <div class="img-container">
+             <a href="../pages/producto.html">
+             <img src="../img/saco_blanco.jpg" alt="Saco de lana blanco">
+             </a>
+
+             <button class="heart-btn" onclick="toggleLike(this)" aria-pressed="false" aria-label="Agregar a favoritos">
+                     <img src="../assets/iconos/favoritos.svg" alt="Like" class="heart-icon">
+              </button>
+              </div>
+           
+            <p class="name">Saco de lana blanco</p>
+            <p class="price">$199.000</p>
+        </div>
+
+         <div class="card" tabindex="0">
+           <div class="img-container">
+             <a href="../pages/producto.html">
+             <img src="../img/chaqueta_negra_oversize.jpg" alt="Chaqueta negra oversize">
+             </a>
+
+             <button class="heart-btn" onclick="toggleLike(this)" aria-pressed="false" aria-label="Agregar a favoritos">
+                     <img src="../assets/iconos/favoritos.svg" alt="Like" class="heart-icon">
+              </button>
+            </div>
+           
+            <p class="name">Chaqueta negra oversize</p>
+            <p class="price">$249.000</p>
+        </div>
+
+         <div class="card" tabindex="0">
+           <div class="img-container">
+             <a href="../pages/producto.html">
+             <img src="../img/jogger_casual.png" alt="Jogger casual">
+             </a>
+
+             <button class="heart-btn" onclick="toggleLike(this)" aria-pressed="false" aria-label="Agregar a favoritos">
+                     <img src="../assets/iconos/favoritos.svg" alt="Like" class="heart-icon">
+              </button>
+              </div>
+           
+            <p class="name">Jogger casual</p>
+            <p class="price">$129.000</p>
+        </div>
+
+         <div class="card" tabindex="0">
+           <div class="img-container">
+            <a href="../pages/producto.html">
+             <img src="../img/chaqueta_cafe.jpg" alt="Chaqueta café de cuero">
+             </a>
+
+             <button class="heart-btn" onclick="toggleLike(this)" aria-pressed="false" aria-label="Agregar a favoritos">
+                     <img src="../assets/iconos/favoritos.svg" alt="Like" class="heart-icon">
+              </button>
+              </div>
+        
+           
+            <p class="name">Chaqueta café de cuero</p>
+            <p class="price">$300.000</p>
+        </div>
+
+         <div class="card" tabindex="0">
+           <div class="img-container">
+            <a href="../pages/producto.html">
+             <img src="../img/camisa_lana.jpeg" alt="Camisa de lana">
+             </a>
+
+             <button class="heart-btn" onclick="toggleLike(this)" aria-pressed="false" aria-label="Agregar a favoritos">
+                     <img src="../assets/iconos/favoritos.svg" alt="Like" class="heart-icon">
+              </button>
+              </div>
+
+            <p class="name">Camisa de lana</p>
+            <p class="price">$75.000</p>
+        </div>
+
+    </div>
+
+    
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+    <div class="footer-grid">
+
+        <div class="footer-col">
+            <h4>NOVAWEAR</h4>
+            <p>Moda contemporánea para quienes buscan expresar su estilo único.</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>COMPRAS</h4>
+            <ul>
+                <li><a href="#">Mujer</a></li>
+                <li><a href="#">Hombre</a></li>
+                <li><a href="#">Lo Nuevo</a></li>
+                <li><a href="#">Ofertas</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>AYUDA</h4>
+            <ul>
+                <li><a href="#">Envíos</a></li>
+                <li><a href="#">Devoluciones</a></li>
+                <li><a href="#">Tallas</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>SÍGUENOS</h4>
+            <ul>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">TikTok</a></li>
+                <li><a href="#">Pinterest</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        <p>&copy; 2026 NOVAWEAR. Todos los derechos reservados.</p>
+    </div>
+</footer>
+</body>
+
+<script>
+function toggleLike(btn) {
+    btn.classList.toggle("liked");
+
+    let estado = btn.classList.contains("liked");
+    btn.setAttribute("aria-pressed", estado);
+}
+</script>
+
+</html>
