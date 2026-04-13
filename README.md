@@ -120,4 +120,30 @@ Decidimos organizar el proyecto de esta manera por tres razones principales. Pri
 
 🚀 8. Instalación y Ejecución
 
-Explicar cómo correr el proyecto.
+## 🚀 8. Instalación y Ejecución
+
+### ¿Cómo correr el proyecto?
+
+El sitio ya está publicado y se puede acceder desde cualquier navegador web en la siguiente URL: [enlaceee]
+
+### ¿Qué puede hacer el usuario en el sitio?
+
+**Página principal (Home):** Al cargar la página, el usuario ve la pantalla de inicio con las colecciones destacadas. Desde el header puede navegar a las secciones de Mujer, Hombre o Lo Nuevo. También tiene acceso a sus favoritos, al carrito y a su cuenta de usuario. Bajando un poco, encuentra la sección de colecciones destacadas con productos en tendencia. También puede explorar las colecciones de mujer y hombre a través de las imágenes grandes, y al final puede suscribirse al newsletter para recibir novedades.
+
+**Página de Mujer y Hombre:** El usuario puede filtrar productos por categoría (chaquetas, vestidos, pantalones, etc.), por talla y por rango de precio. Cada producto se muestra en una tarjeta con imagen, nombre y precio.
+
+**Página de Producto:** Al hacer clic en un producto, el usuario puede ver una imagen más grande del producto, el precio, una descripción corta, seleccionar la talla y la cantidad deseada. Desde esta página puede agregar el producto al carrito o guardarlo en favoritos. También puede ver otros colores disponibles si los hay, los detalles de la prenda, y una sección de "productos que te pueden gustar" con recomendaciones.
+
+**Página de Favoritos:** El usuario puede ver todos los productos que ha guardado como favoritos. Desde aquí puede ver el detalle de cada producto o eliminarlo de su lista de favoritos.
+
+**Página del Carrito:** El usuario puede ver todos los productos que ha agregado al carrito. Para cada producto puede aumentar o disminuir la cantidad, o eliminarlo del carrito. En el lado derecho aparece el resumen de la compra con el subtotal, el costo de envío y el total a pagar. Desde aquí puede seguir comprando (volver al home) o proceder al pago.
+
+**Página de Pago:** Si el usuario decide proceder al pago, debe llenar un formulario con su información personal (nombre, correo, celular, dirección, ciudad, estado, código postal) y los datos de pago (número de tarjeta, fecha de caducidad, CVV). También se muestra un resumen del pedido para que el usuario revise antes de confirmar la compra.
+
+**Página de Pago Confirmado:** Después de realizar el pago, el usuario ve una pantalla de confirmación indicando que su compra fue exitosa.
+
+**Página de Ingresar:** El usuario puede iniciar sesión con su correo electrónico y contraseña si ya tiene una cuenta creada.
+
+**Página de Crear Cuenta:** Si el usuario no tiene cuenta, puede crear una nueva ingresando su nombre, correo electrónico y contraseña.
+
+**Navegación general:** Todas las páginas comparten el mismo header y footer, lo que permite al usuario moverse fácilmente entre las secciones del sitio sin perderse. Además, todo el sitio se puede navegar usando solo el teclado (tecla TAB) y es completamente responsive, adaptándose a cualquier dispositivo como computadores de escritorio, tablets y teléfonos móviles.
