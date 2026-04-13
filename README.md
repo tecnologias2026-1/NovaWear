@@ -118,15 +118,13 @@ Para mantener el proyecto ordenado y evitar confusiones entre los integrantes de
 
 Decidimos organizar el proyecto de esta manera por tres razones principales. Primero por orden, así cada cosa está en su lugar y nada anda perdido. Segundo por trabajo en equipo, porque cada persona trabaja en su propia página y sus propios estilos sin molestar a los demás. Tercero para evitar conflictos en GitHub, porque al unir las ramas, no se mezcla el código de uno con el de otro. Y cuarto para que sea fácil de mantener, porque si hay que arreglar algo del carrito, sabemos exactamente que está en pages/carrito.html y en css/carrito.css.
 
-🚀 8. Instalación y Ejecución
+## 8. Instalación y Ejecución
 
-## 🚀 8. Instalación y Ejecución
-
-### ¿Cómo correr el proyecto?
+# ¿Cómo correr el proyecto?
 
 El sitio ya está publicado y se puede acceder desde cualquier navegador web en la siguiente URL: [enlaceee]
 
-### ¿Qué puede hacer el usuario en el sitio?
+# ¿Qué puede hacer el usuario en el sitio?
 
 **Página principal (Home):** Al cargar la página, el usuario ve la pantalla de inicio con las colecciones destacadas. Desde el header puede navegar a las secciones de Mujer, Hombre o Lo Nuevo. También tiene acceso a sus favoritos, al carrito y a su cuenta de usuario. Bajando un poco, encuentra la sección de colecciones destacadas con productos en tendencia. También puede explorar las colecciones de mujer y hombre a través de las imágenes grandes, y al final puede suscribirse al newsletter para recibir novedades.
 
