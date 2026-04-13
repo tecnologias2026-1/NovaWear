@@ -87,12 +87,20 @@ Tablas principales
 
 
 🧩 7. Documentación del Sistema
-Estructura de Carpetas
-/css
-/js
-/assets
 
-Explicar brevemente qué contiene cada carpeta.
+Para mantener el proyecto ordenado y evitar confusiones entre los integrantes del equipo, organizamos el código en carpetas separadas según su función. Así cada persona sabe exactamente dónde trabajar sin dañar el trabajo de los demás, de la siguiente manera:
+
+- **`/pages`** → La carpeta pages contiene todos los archivos HTML del sitio. Decidimos poner todas las páginas en una sola carpeta para tenerlas localizadas fácilmente y que cada quien trabajara en su propia página sin afectar la de los demás.
+
+- **`/css`** → La carpeta css contiene los estilos de cada página. Separamos los CSS por página para que el código esté más limpio y si alguien necesita cambiar algo del carrito o l apagina que este trabajando, solo modifica su propio archivo sin dañar los demas. 
+
+- **`/assets/iconos`** → La carpeta assets tiene adentro una subcarpeta llamada iconos donde guardamos todos los íconos en formato SVG, como el logo, el corazón de favoritos, la bolsa del carrito y el ícono de usuario. Agrupar todos los íconos en un solo lugar hace que todos los integrantes del equipo los encuentren fácilmente.
+
+- **`/img`** → La carpeta img contiene todas las imágenes del sitio, como las fotos de los productos como camisetas, chaquetas y vestidos, y también las imágenes de las secciones grandes como la foto de Kendall Jenner en el hero y las fotos de Explorar mujer y explorar hombre.
+
+- **`/js`** → La carpeta js la dejamos creada pero no la usamos en esta entrega pero la dejamos preparada para después agregar funcionalidad con JavaScript.
+
+Decidimos organizar el proyecto de esta manera por tres razones principales. Primero por orden, así cada cosa está en su lugar y nada anda perdido. Segundo por trabajo en equipo, porque cada persona trabaja en su propia página y sus propios estilos sin molestar a los demás. Tercero para evitar conflictos en GitHub, porque al unir las ramas, no se mezcla el código de uno con el de otro. Y cuarto para que sea fácil de mantener, porque si hay que arreglar algo del carrito, sabemos exactamente que está en pages/carrito.html y en css/carrito.css.
 
 🚀 8. Instalación y Ejecución
 
