@@ -7,38 +7,28 @@
     <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
+    
     <!-- HEADER con Flexbox -->
-    <header>
-        <nav>
-            <!-- Logo izquierda con ícono -->
-            <div class="logo">
-                <img src="assets/iconos/logo.svg" alt="Logo NovaWear" class="logo-img">
-                <a href="index.html" tabindex="0">NovaWear</a>
-            </div>
-            
-            <!-- Menú central -->
-            <ul class="menu-central">
-                <li><a href="#" tabindex="0">MUJER</a></li>
-                <li><a href="#" tabindex="0">HOMBRE</a></li>
-                <li><a href="#" tabindex="0">LO NUEVO</a></li>
-            </ul>
-            
-            <!-- Iconos derecha con imágenes y BADGES -->
-            <ul class="iconos-derecha">
-                <li><a href="favoritos.html" aria-label="Favoritos" class="icono-con-badge" tabindex="0">
-                    <img src="/assets/iconos/favoritos.svg" alt="Favoritos" class="icono-nav">
-                    <span class="badge" aria-label="0 favoritos">0</span>
-                </a></li>
-                <li><a href="carrito.html" aria-label="Carrito" class="icono-con-badge" tabindex="0">
-                    <img src="/assets/iconos/bolsa.svg" alt="Carrito" class="icono-nav">
-                    <span class="badge" aria-label="0 productos en carrito">0</span>
-                </a></li>
-                <li><a href="#" aria-label="Usuario" class="icono-usuario" tabindex="0">
-                    <img src="/assets/iconos/cuenta.svg" alt="Usuario" class="icono-nav">
-                </a></li>
-            </ul>
+<header class="main-header">
+    <div class="header-container">
+        <div class="Logo">
+        <img src="assets/iconos/logo.svg" aria-label="Logo NovaWear" alt="">
+        <span class="nombre-logo">NovaWear</span>
+        </div>
+
+        <nav class="nav-categorias">
+            <a href="#" class="boton-nav">Mujer</a>
+            <a href="#" class="boton-nav">Hombre</a>
+            <a href="#" class="boton-nav">Lo nuevo</a>
         </nav>
-    </header>
+
+        <nav class="nav-iconos" aria-label="Herramientas de usuario">
+            <a href="#" class="boton-icon icono-favoritos" aria-label="Ver mis favoritos"><img src="assets/iconos/favoritos.svg" alt=""></a>
+            <a href="#" class="boton-icon icono-bolsa" aria-label="Ver mi bolsa"><img src="assets/iconos/bolsa.svg" alt=""></a>
+            <a href="#" class="boton-icon icono-usuario" aria-label="Acceder a mi cuenta"><img src="assets/iconos/cuenta.svg" alt=""></a>
+        </nav>
+    </div>
+</header>
     
     <!-- MAIN (requisito de HTML semántico) -->
     <main>
@@ -62,9 +52,9 @@
             <div class="grid-cards">
                 <!-- Producto 1 -->
                 <div class="product-card">
-                    <div class="card-img" style="background-image: url('/img/Camiseta estilo polo.jpg')" role="img" aria-label="Camiseta Polo Azul">
+                    <div class="card-img" style="background-image: url('img/Camiseta estilo polo.jpg')" role="img" aria-label="Camiseta Polo Azul">
                         <button class="heart-btn" aria-label="Agregar a favoritos" tabindex="0">
-                            <img src="/assets/iconos/favoritos.svg" alt="Agregar a favoritos" class="heart-icon">
+                            <img src="assets/iconos/favoritos.svg" alt="Agregar a favoritos" class="heart-icon">
                         </button>
                     </div>
                     <div class="card-info">
@@ -76,9 +66,9 @@
 
                 <!-- Producto 2 -->
                 <div class="product-card">
-                    <div class="card-img" style="background-image: url('../img/ChaquetadecueroOversize.jpg')" role="img" aria-label="Chaqueta tipo Bomber Oversize en Cuero">
+                    <div class="card-img" style="background-image: url('img/ChaquetadecueroOversize.jpg')" role="img" aria-label="Chaqueta tipo Bomber Oversize en Cuero">
                         <button class="heart-btn" aria-label="Agregar a favoritos" tabindex="0">
-                            <img src="/assets/iconos/favoritos.svg" alt="Agregar a favoritos" class="heart-icon">
+                            <img src="assets/iconos/favoritos.svg" alt="Agregar a favoritos" class="heart-icon">
                         </button>
                     </div>
                     <div class="card-info">
@@ -90,9 +80,9 @@
 
                 <!-- Producto 3 -->
                 <div class="product-card">
-                    <div class="card-img" style="background-image: url('/img/Conjuntonegro.webp')" role="img" aria-label="Traje Sastre Moderno">
+                    <div class="card-img" style="background-image: url('img/Conjuntonegro.webp')" role="img" aria-label="Traje Sastre Moderno">
                         <button class="heart-btn" aria-label="Agregar a favoritos" tabindex="0">
-                            <img src="/assets/iconos/favoritos.svg" alt="Agregar a favoritos" class="heart-icon">
+                            <img src="assets/iconos/favoritos.svg" alt="Agregar a favoritos" class="heart-icon">
                         </button>
                     </div>
                     <div class="card-info">
@@ -104,9 +94,9 @@
 
                 <!-- Producto 4 -->
                 <div class="product-card">
-                    <div class="card-img" style="background-image: url('/img/Gabanbeige.webp')" role="img" aria-label="Gabán Elegante de Paño">
+                    <div class="card-img" style="background-image: url('img/Gabanbeige.webp')" role="img" aria-label="Gabán Elegante de Paño">
                         <button class="heart-btn" aria-label="Agregar a favoritos" tabindex="0">
-                            <img src="/assets/iconos/favoritos.svg" alt="Agregar a favoritos" class="heart-icon">
+                            <img src="assets/iconos/favoritos.svg" alt="Agregar a favoritos" class="heart-icon">
                         </button>
                     </div>
                     <div class="card-info">
@@ -118,9 +108,9 @@
 
                 <!-- Producto 5 -->
                 <div class="product-card">
-                    <div class="card-img" style="background-image: url('/img/Vestidodebroderie.jpg')" role="img" aria-label="Vestido de broderie">
+                    <div class="card-img" style="background-image: url('img/Vestidodebroderie.jpg')" role="img" aria-label="Vestido de broderie">
                         <button class="heart-btn" aria-label="Agregar a favoritos" tabindex="0">
-                            <img src="/assets/iconos/favoritos.svg" alt="Agregar a favoritos" class="heart-icon">
+                            <img src="assets/iconos/favoritos.svg" alt="Agregar a favoritos" class="heart-icon">
                         </button>
                     </div>
                     <div class="card-info">
@@ -132,9 +122,9 @@
 
                 <!-- Producto 6 -->
                 <div class="product-card">
-                    <div class="card-img" style="background-image: url('/img/Chaqueta Denim.webp')" role="img" aria-label="Chaqueta de Mezclilla Vintage">
+                    <div class="card-img" style="background-image: url('img/Chaqueta Denim.webp')" role="img" aria-label="Chaqueta de Mezclilla Vintage">
                         <button class="heart-btn" aria-label="Agregar a favoritos" tabindex="0">
-                            <img src="/assets/iconos/favoritos.svg" alt="Agregar a favoritos" class="heart-icon">
+                            <img src="assets/iconos/favoritos.svg" alt="Agregar a favoritos" class="heart-icon">
                         </button>
                     </div>
                     <div class="card-info">
@@ -148,14 +138,14 @@
         
         <!-- SECCIÓN ARIANA Y TOM -->
         <section class="celebridades" aria-label="Colecciones por género">
-            <div class="celebridad-card" style="background-image: url('/img/arianamujeres.jpg')" role="img" aria-label="Colección mujer">
+            <div class="celebridad-card" style="background-image: url('img/arianamujeres.jpg')" role="img" aria-label="Colección mujer">
                 <div class="celebridad-contenido">
                     <h3>MUJER</h3>
                     <button class="btn-explorar" tabindex="0">EXPLORAR COLECCIÓN</button>
                 </div>
             </div>
             
-            <div class="celebridad-card" style="background-image: url('/img/tomhombre.jpg')" role="img" aria-label="Colección hombre">
+            <div class="celebridad-card" style="background-image: url('img/tomhombre.jpg')" role="img" aria-label="Colección hombre">
                 <div class="celebridad-contenido">
                     <h3>HOMBRE</h3>
                     <button class="btn-explorar" tabindex="0">EXPLORAR COLECCIÓN</button>
