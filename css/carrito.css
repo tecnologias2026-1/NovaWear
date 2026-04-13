@@ -315,6 +315,7 @@ nav {
     border: 2px solid black;
     padding: 12px;
     font-weight: 600;
+    text-decoration: none;
     cursor: pointer;
     transition: all 0.3s;
     text-align: center;
@@ -334,6 +335,7 @@ nav {
     border: none;
     padding: 12px;
     font-weight: 600;
+    text-decoration: none;
     cursor: pointer;
     transition: all 0.3s;
 }
