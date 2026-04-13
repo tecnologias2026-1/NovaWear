@@ -210,20 +210,13 @@ footer {
 /* ================= RESPONSIVE PARA CELULARES ================= */
 @media (max-width: 480px) {
 
-  /* Header */
+  /* HEADER */
   .header-container {
-    flex-wrap: wrap;        /* permite que los elementos bajen si no caben */
-    gap: 10px;              /* reduce el espacio entre elementos */
-    height: auto;           /* ya no fuerza altura fija */
-    justify-content: space-between; /* distribuye logo y iconos */
-    padding: 10px;
-  }
-
-    /* Main content */
-  .main-content {
-    padding: 20px;
-    gap: 15px;
+    flex-wrap: wrap;
+    gap: 10px; 
     height: auto;
+    justify-content: space-between;
+    padding: 10px;
   }
 
   .Logo img {
@@ -234,17 +227,34 @@ footer {
     font-size: 28px;
   }
 
+  
+  .nav-categorias {
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap; 
+    order: 3; /* baja debajo del header */
+  }
+
+  .boton-nav {
+    font-size: 14px;
+    min-width: auto;
+    padding: 5px 10px;
+  }
+
   .nav-iconos {
     gap: 10px;
   }
 
   .boton-icon {
-    width: 32px;
-    height: 32px;
+    width: 28px;
+    height: 28px;
   }
 
-    .boton-icon img {
-    width: 100%;
+  /* MAIN CONTENT */
+  .main-content {
+    padding: 40px 20px; 
+    gap: 20px;
     height: auto;
   }
 
@@ -254,32 +264,26 @@ footer {
   }
 
   h1 {
-    font-size: 22px;
+    font-size: 24px;
   }
 
   p {
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .boton-volver-cat {
-    width: 160px;
-    padding: 10px 0;
-    font-size: 13px;
+    width: 180px;
+    padding: 12px 0;
+    font-size: 14px;
   }
 
-  /* Footer */
+  /* FOOTER */
   .footer-grid {
-    grid-template-columns: 1fr; /* apila las columnas */
+    grid-template-columns: 1fr;
     gap: 20px;
     text-align: center;
   }
-
-  .footer-col h4 {
-    font-size: 16px;
-  }
-
-  .footer-col p,
-  .footer-col a {
-    font-size: 13px;
-  }
 }
+
+
+
