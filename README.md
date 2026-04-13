@@ -82,7 +82,7 @@ https://www.figma.com/proto/7a6go6iI8TAc55X5vObH0T/Mockcup?node-id=0-1&t=GBLyK1f
 
 🗄️ 6. Diseño de Base de Datos
 
-img/base_de_datos.png
+![Base de datos](img/base_de_datos.png)
 Tablas principales
 
 
