@@ -354,6 +354,7 @@ nav {
     padding: 12px 30px;
     font-weight: 600;
     cursor: pointer;
+    text-decoration: none;
     transition: all 0.3s;
 }
 
