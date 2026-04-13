@@ -1,0 +1,528 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: white;
+    color: #333;
+}
+
+/* Clase para accesibilidad (oculto visualmente pero visible para lectores de pantalla) */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* ===== HEADER CON FLEXBOX ===== */
+header {
+    padding: 20px 5%;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.logo a:focus {
+    outline: 2px solid #ff4d4d;
+    outline-offset: 2px;
+}
+
+.logo-img {
+    height: 70px;
+    width: auto;
+}
+
+.menu-central {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+.menu-central li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    padding: 10px 25px;
+    border: 2px solid black;
+    border-radius: 30px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.menu-central li a:hover,
+.menu-central li a:focus {
+    background-color: black;
+    color: white;
+    outline: 2px solid #ff4d4d;
+    outline-offset: 2px;
+}
+
+.iconos-derecha {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    align-items: center;
+}
+
+.iconos-derecha li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+    transition: transform 0.2s;
+    position: relative;
+    display: inline-block;
+}
+
+.iconos-derecha li a:hover,
+.iconos-derecha li a:focus {
+    transform: scale(1.1);
+    outline: 2px solid #ff4d4d;
+    outline-offset: 4px;
+}
+
+/* Clase específica para el ícono de usuario */
+.icono-usuario {
+    display: inline-block;
+}
+
+.icono-nav {
+    width: 24px;
+    height: 24px;
+    display: block;
+    pointer-events: none;
+}
+
+/* ===== BADGES para favoritos y carrito ===== */
+.icono-con-badge {
+    position: relative;
+    display: inline-block;
+}
+
+.badge {
+    position: absolute;
+    top: -10px;
+    right: -12px;
+    background-color: #ff4d4d;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: bold;
+    min-width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 4px;
+    pointer-events: none;
+}
+
+/* ===== HERO KENDALL ===== */
+.hero-kendall {
+    margin: 0;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+                url('../img/kendalljenner.webp');
+    background-size: cover;
+    background-position: center;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-contenido {
+    max-width: 600px;
+    padding: 20px;
+}
+
+.hero-contenido h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero-contenido p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.hero-botones {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.hero-btn {
+    padding: 15px 30px;
+    border: 2px solid white;
+    border-radius: 0px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    background-color: transparent;
+    color: white;
+}
+
+.btn-mujer:hover,
+.btn-mujer:focus,
+.btn-hombre:hover,
+.btn-hombre:focus {
+    background-color: white;
+    color: black;
+    transform: translateY(-3px);
+    outline: 2px solid #ff4d4d;
+    outline-offset: 2px;
+}
+
+/* ===== COLECCIONES DESTACADAS ===== */
+.colecciones {
+    padding: 60px 5%;
+    text-align: center;
+}
+
+.colecciones h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.colecciones p {
+    color: #666;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+}
+
+.grid-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.product-card {
+    background: white;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    position: relative;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+.card-img {
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.heart-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    transition: all 0.3s;
+    z-index: 2;
+}
+
+.heart-btn:hover,
+.heart-btn:focus {
+    transform: scale(1.1);
+    outline: 2px solid #ff4d4d;
+    outline-offset: 2px;
+}
+
+.heart-icon {
+    width: 22px;
+    height: 22px;
+    display: block;
+}
+
+.card-info {
+    padding: 15px;
+    text-align: left;
+}
+
+.card-info h3 {
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+
+.card-info .precio {
+    font-weight: bold;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.btn-agregar-carrito {
+    margin-top: 12px;
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn-agregar-carrito:hover,
+.btn-agregar-carrito:focus {
+    background-color: #333;
+    transform: translateY(-2px);
+    outline: 2px solid #ff4d4d;
+    outline-offset: 2px;
+}
+
+/* ===== SECCIÓN CELEBRIDADES ===== */
+.celebridades {
+    padding: 40px 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.celebridad-card {
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.celebridad-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.3);
+}
+
+.celebridad-contenido {
+    position: relative;
+    z-index: 2;
+    padding: 30px;
+}
+
+.celebridad-contenido h3 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.btn-explorar {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 12px 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-explorar:hover,
+.btn-explorar:focus {
+    background-color: white;
+    color: black;
+    transform: translateY(-3px);
+    outline: 2px solid #ff4d4d;
+    outline-offset: 2px;
+}
+
+/* ===== SUSCRIPCIÓN ===== */
+.suscripcion {
+    padding: 60px 5%;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.suscripcion h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.suscripcion p {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.suscripcion-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.suscripcion-form input {
+    flex: 1;
+    padding: 15px 20px;
+    border: 2px solid #ddd;
+    border-radius: 30px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.suscripcion-form input:focus {
+    border-color: black;
+    outline: 2px solid #ff4d4d;
+    outline-offset: 2px;
+}
+
+.suscripcion-form button {
+    padding: 15px 30px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.suscripcion-form button:hover,
+.suscripcion-form button:focus {
+    background-color: #333;
+    transform: translateY(-3px);
+    outline: 2px solid #ff4d4d;
+    outline-offset: 2px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 50px 5% 20px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.footer-col h4 {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col li {
+    margin-bottom: 10px;
+}
+
+.footer-col a {
+    color: #999;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-col a:hover,
+.footer-col a:focus {
+    color: white;
+    outline: 2px solid #ff4d4d;
+    outline-offset: 2px;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid #333;
+    color: #666;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+    .grid-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .menu-central {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .grid-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .celebridades {
+        grid-template-columns: 1fr;
+    }
+    
+    .suscripcion-form {
+        flex-direction: column;
+    }
+    
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero-botones {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hero-btn {
+        width: 200px;
+    }
+}
