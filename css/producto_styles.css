@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+/* ===== HEADER ===== */
+header {
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 1000;
+    padding: 20px 5%;
+    border-bottom: 1px solid #eee;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img {
+    height: 100px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Menú */
+.menu-central {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+.menu-central a {
+    text-decoration: none;
+    color: black;
+    padding: 8px 20px;
+    border: 2px solid black;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.menu-central a:hover {
+    background: black;
+    color: white;
+}
+
+
+/* Iconos */
+.iconos-derecha {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.icono-nav {
+    width: 24px;
+    transition: 0.2s;
+}
+
+.icono-nav:hover {
+    transform: scale(1.1);
+}
+
+/* ===== MAIN ===== */
+.producto {
+    padding: 30px 7%;
+}
+
+.producto-container {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    gap: 50px ;
+    align-items: start;
+    padding: 30px 0;
+}
+
+.producto-img img {
+    width: 100%;
+    height: 500px;
+    border-radius: 6px;
+    object-fit: cover;
+
+}
+
+.producto-info h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.precio {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.descripcion {
+    padding: 20px 0;
+    font-size: 15px;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background: #ddd;
+}
+/* Tallas */
+.tallas p {
+    margin-bottom: 10px;
+    color: black;
+}
+
+.tallas-opciones {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tallas-opciones button:hover {
+    border: 1px solid black;
+}
+
+.tallas-opciones button {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    background: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.tallas-opciones button.active {
+    background: black;
+    color: white;
+    border: 1px solid black;
+}
+
+/* Cantidad */
+.cantidad p {
+     margin-bottom: 10px;
+    color: black;
+    }
+
+.cantidad select {
+    padding: 8px;
+    width: 90px;
+}
+
+/* Botones */
+.acciones {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.fav-btn {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ccc;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.fav-btn img {
+    width: 25px;
+    filter: invert(0); /* blanco */
+}
+
+.fav-btn:hover {
+    background: black;
+}
+
+.fav-btn:hover img {
+    filter: invert(1); /* negro */
+}
+
+.add-cart {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.add-cart img {
+    width: 18px;
+    filter: invert(1); /* icono blanco */
+}
+
+/* hover */
+.add-cart:hover {
+    background: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.add-cart:hover img {
+    filter: invert(0);
+}
+
+.producto h2{
+    color: black;
+    padding-top: 25px;
+}
+
+/* GRID */
+.grid-cards {
+   display: grid;
+     grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 25px 0px;
+}
+
+/* CARD */
+.card {
+    background: white;
+    border-radius: 8px;
+}
+
+.img-container {
+    position: relative;
+    overflow: hidden;
+    height:400px;
+}
+
+.img-container > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.img-container:hover > img {
+    transform: scale(1.1); /* zoom */
+}
+
+/* Corazón */
+.heart-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    height:40px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    transition: all 0.3s;
+    z-index: 2;
+}
+
+.heart-icon {
+    width: 22px;
+    height: 22px;
+    display: block;
+}
+
+/* Estado like (después de hacer clic) */
+.heart-btn.liked {
+    background-color: black;
+}
+
+.heart-btn.liked .heart-icon {
+    content: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23ff4d4d"%3E%3Cpath d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"%3E%3C/path%3E%3C/svg%3E');
+    /* Ese es un corazón rojo SVG */
+}
+
+.heart-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Texto */
+.name {
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.price {
+    color: #666;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: #1a1a1a;
+    color: white;
+    padding: 50px 5% 20px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.footer-col h4 {
+    margin-bottom: 15px;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col a {
+    color: #999;
+    text-decoration: none;
+}
+
+.footer-col a:hover {
+    color: white;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+}
+
+/* Enfoque con teclado */
+a:focus,
+button:focus,
+label:focus {
+    outline: 2px solid black;
+    outline-offset: 3px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+    .grid-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .grid-cards {
+        grid-template-columns: 1fr;
+    }
+}
