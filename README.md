@@ -15,18 +15,15 @@ Nicolás Caro Betancurt - 1202750
 
 🎯 1. Objetivo General
 
-Escribir un solo párrafo donde expliquen:
-Qué quieren lograr con el sistema.
-Qué problema buscan solucionar.
+Desarrollar una plataforma de comercio electrónico enfocada en la venta de ropa juvenil, con el fin de brindar a los usuarios una experiencia de compra en línea sencilla, clara y segura, que les permita explorar productos, conocer sus características y realizar compras de manera eficiente; dando solución a la necesidad de contar con un sistema organizado que facilite el acceso a este tipo de productos dentro de un entorno digital confiable.
 
 
 
 🌍 2. Contexto de Uso
 
-¿Quién va a usar el sistema?:
-¿Cómo se va a utilizar el sistema?:
+El sistema está dirigido a cualquier persona interesada en la compra de ropa juvenil a través de internet. En general, está pensado para usuarios jóvenes y adultos que utilizan plataformas digitales y buscan una forma fácil y rápida de adquirir productos en línea.
 
-El sistema será de libre visualización y acceso para cualquiera que entre a la página. Sin embargo para la compra de los productos se le requerirá al usuario crear una cuenta con un correo y contraseña para el proceso de compra de o de los productos que el usuario quiera añadir a su carrito.
+El sistema será de libre acceso para cualquier usuario que ingrese a la página, permitiendo la visualización del catálogo de productos sin necesidad de registrarse. Sin embargo, para realizar la compra, el usuario deberá crear una cuenta proporcionando un correo electrónico y una contraseña. Una vez registrado, podrá agregar productos al carrito y completar el proceso de compra de manera segura.
 
 📋 3. Requerimientos del Sistema
 3.1 Requerimientos Funcionales
