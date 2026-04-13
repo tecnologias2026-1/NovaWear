@@ -202,10 +202,10 @@ hr {
     align-items: center;
     justify-content: center;
     gap: 10px;
-
     background: black;
     color: white;
-    border: none;
+    border: 2px;
+    text-decoration: none;
     border-radius: 30px;
     padding: 15px;
     cursor: pointer;
