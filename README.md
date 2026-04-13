@@ -1,31 +1,27 @@
-Para Completar por grupo
-
-🌐 NovaWear
+## NovaWear
 
 El sistema propuesto consiste en una plataforma eCommerce web orientada a la venta de ropa juvenil sostenible. La aplicación permitirá a los usuarios explorar un catálogo de productos organizados por categorías, visualizar detalles de cada prenda, agregar productos a un carrito de compras y realizar el proceso de pago de manera segura.
 
 Adicionalmente, el sistema contará con un módulo administrativo que permitirá la gestión de productos, inventario y pedidos, garantizando el correcto funcionamiento de la tienda en línea.
 
 
-👥 Integrantes
+## Integrantes
 
 Laura Johanna Casas - 1202777
 Valeria Pantoja Macías - 1202785
 Nicolás Caro Betancurt - 1202750
 
-🎯 1. Objetivo General
+## 1. Objetivo General
 
 Desarrollar una plataforma de comercio electrónico enfocada en la venta de ropa juvenil, con el fin de brindar a los usuarios una experiencia de compra en línea sencilla, clara y segura, que les permita explorar productos, conocer sus características y realizar compras de manera eficiente; dando solución a la necesidad de contar con un sistema organizado que facilite el acceso a este tipo de productos dentro de un entorno digital confiable.
 
-
-
-🌍 2. Contexto de Uso
+## 2. Contexto de Uso
 
 El sistema está dirigido a cualquier persona interesada en la compra de ropa juvenil a través de internet. En general, está pensado para usuarios jóvenes y adultos que utilizan plataformas digitales y buscan una forma fácil y rápida de adquirir productos en línea.
 
 El sistema será de libre acceso para cualquier usuario que ingrese a la página, permitiendo la visualización del catálogo de productos sin necesidad de registrarse. Sin embargo, para realizar la compra, el usuario deberá crear una cuenta proporcionando un correo electrónico y una contraseña. Una vez registrado, podrá agregar productos al carrito y completar el proceso de compra de manera segura.
 
-📋 3. Requerimientos del Sistema
+## 3. Requerimientos del Sistema
 3.1 Requerimientos Funcionales
 
 RF1. Crear usuario:
@@ -65,8 +61,7 @@ RNF5. El sistema debe permitir una escalabilidad básica para soportar un aument
 
 RNF6. El sistema debe proteger la información personal del usuario conforme a normativas de protección de datos.
 
-
-🧠 4. Diagramas UML
+## 4. Diagramas UML
 
 Diagrama de Casos de Uso
 
@@ -76,11 +71,11 @@ Diagrama de Secuencia
 
 El diagrama de secuencia representa el proceso de compra dentro de la plataforma NovaWear, mostrando el orden en que interactúan el usuario, el sistema y la pasarela de pagos. En este se visualiza cómo el usuario selecciona productos, los agrega al carrito y procede al pago, mientras el sistema gestiona la información y envía la solicitud a la pasarela de pagos para procesar la transacción. Finalmente, se muestra la confirmación de la compra, evidenciando la secuencia de acciones necesarias para completar el proceso de manera correcta.
 
-🎨 5. URL del Prototipo
+## 5. URL del Prototipo
 https://www.figma.com/proto/7a6go6iI8TAc55X5vObH0T/Mockcup?node-id=0-1&t=GBLyK1flqgiVamBy-1
 
 
-🗄️ 6. Diseño de Base de Datos
+## 6. Diseño de Base de Datos
 
 ![Base de datos](img/base_de_datos.png)
 
@@ -102,7 +97,7 @@ Detalle de pedido:
 Almacena la información específica de cada producto dentro de un pedido, como cantidad, precio y producto asociado. Esta entidad permite desglosar los pedidos en sus componentes individuales
 
 
-🧩 7. Documentación del Sistema
+## 7. Documentación del Sistema
 
 Para mantener el proyecto ordenado y evitar confusiones entre los integrantes del equipo, organizamos el código en carpetas separadas según su función. Así cada persona sabe exactamente dónde trabajar sin dañar el trabajo de los demás, de la siguiente manera:
 
@@ -120,11 +115,11 @@ Decidimos organizar el proyecto de esta manera por tres razones principales. Pri
 
 ## 8. Instalación y Ejecución
 
-# ¿Cómo correr el proyecto?
+**¿Cómo correr el proyecto?**
 
 El sitio ya está publicado y se puede acceder desde cualquier navegador web en la siguiente URL: [enlaceee]
 
-# ¿Qué puede hacer el usuario en el sitio?
+**¿Qué puede hacer el usuario en el sitio?**
 
 **Página principal (Home):** Al cargar la página, el usuario ve la pantalla de inicio con las colecciones destacadas. Desde el header puede navegar a las secciones de Mujer, Hombre o Lo Nuevo. También tiene acceso a sus favoritos, al carrito y a su cuenta de usuario. Bajando un poco, encuentra la sección de colecciones destacadas con productos en tendencia. También puede explorar las colecciones de mujer y hombre a través de las imágenes grandes, y al final puede suscribirse al newsletter para recibir novedades.
 
