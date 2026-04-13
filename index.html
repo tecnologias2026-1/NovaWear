@@ -1,1 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaWear - Tienda de Moda</title>
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+<body>
+    <!-- HEADER con Flexbox -->
+    <header>
+        <nav>
+            <!-- Logo izquierda con ícono -->
+            <div class="logo">
+                <img src="../assets/iconos/logo.svg" alt="Logo NovaWear" class="logo-img">
+                <a href="home.html" tabindex="0">NovaWear</a>
+            </div>
+            
+            <!-- Menú central -->
+            <ul class="menu-central">
+                <li><a href="#" tabindex="0">MUJER</a></li>
+                <li><a href="#" tabindex="0">HOMBRE</a></li>
+                <li><a href="#" tabindex="0">LO NUEVO</a></li>
+            </ul>
+            
+            <!-- Iconos derecha con imágenes y BADGES -->
+            <ul class="iconos-derecha">
+                <li><a href="favoritos.html" aria-label="Favoritos" class="icono-con-badge" tabindex="0">
+                    <img src="../assets/iconos/favoritos.svg" alt="Favoritos" class="icono-nav">
+                    <span class="badge" aria-label="0 favoritos">0</span>
+                </a></li>
+                <li><a href="carrito.html" aria-label="Carrito" class="icono-con-badge" tabindex="0">
+                    <img src="../assets/iconos/bolsa.svg" alt="Carrito" class="icono-nav">
+                    <span class="badge" aria-label="0 productos en carrito">0</span>
+                </a></li>
+                <li><a href="#" aria-label="Usuario" class="icono-usuario" tabindex="0">
+                    <img src="../assets/iconos/cuenta.svg" alt="Usuario" class="icono-nav">
+                </a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- MAIN (requisito de HTML semántico) -->
+    <main>
+        <!-- HERO con imagen Kendall Jenner -->
+        <section class="hero-kendall" aria-label="Sección principal de moda">
+            <div class="hero-contenido">
+                <h1>Elegancia Minimalista</h1>
+                <p>Descubre moda atemporal para el estilo de vida moderno</p>
+                <div class="hero-botones">
+                    <button class="hero-btn btn-mujer" tabindex="0">COMPRAR MUJER</button>
+                    <button class="hero-btn btn-hombre" tabindex="0">COMPRAR HOMBRE</button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- COLECCIONES DESTACADAS -->
+        <section class="colecciones" aria-labelledby="colecciones-titulo">
+            <h2 id="colecciones-titulo">COLECCIONES DESTACADAS</h2>
+            <p>Lo más popular de la temporada</p>
+            
+            <div class="grid-cards">
+                <!-- Producto 1 -->
+                <div class="product-card">
+                    <div class="card-img" style="background-image: url('../img/Camiseta estilo polo.jpg')" role="img" aria-label="Camiseta Polo Azul">
+                        <button class="heart-btn" aria-label="Agregar a favoritos" tabindex="0">
+                            <img src="../assets/iconos/favoritos.svg" alt="Agregar a favoritos" class="heart-icon">
+                        </button>
+                    </div>
+                    <div class="card-info">
+                        <h3>Camiseta Polo Azul</h3>
+                        <span class="precio">$55,999 COP</span>
+                        <button class="btn-agregar-carrito" tabindex="0">AGREGAR AL CARRITO</button>
+                    </div>
+                </div>
 
+                <!-- Producto 2 -->
+                <div class="product-card">
+                    <div class="card-img" style="background-image: url('../img/ChaquetadecueroOversize.jpg')" role="img" aria-label="Chaqueta tipo Bomber Oversize en Cuero">
+                        <button class="heart-btn" aria-label="Agregar a favoritos" tabindex="0">
+                            <img src="../assets/iconos/favoritos.svg" alt="Agregar a favoritos" class="heart-icon">
+                        </button>
+                    </div>
+                    <div class="card-info">
+                        <h3>Chaqueta tipo Bomber Oversize en Cuero</h3>
+                        <span class="precio">$250,000 COP</span>
+                        <button class="btn-agregar-carrito" tabindex="0">AGREGAR AL CARRITO</button>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="product-card">
+                    <div class="card-img" style="background-image: url('../img/Conjuntonegro.webp')" role="img" aria-label="Traje Sastre Moderno">
+                        <button class="heart-btn" aria-label="Agregar a favoritos" tabindex="0">
+                            <img src="../assets/iconos/favoritos.svg" alt="Agregar a favoritos" class="heart-icon">
+                        </button>
+                    </div>
+                    <div class="card-info">
+                        <h3>Traje Sastre Moderno (Chaleco + Palazzo)</h3>
+                        <span class="precio">$249,900 COP</span>
+                        <button class="btn-agregar-carrito" tabindex="0">AGREGAR AL CARRITO</button>
+                    </div>
+                </div>
+
+                <!-- Producto 4 -->
+                <div class="product-card">
+                    <div class="card-img" style="background-image: url('../img/Gabanbeige.webp')" role="img" aria-label="Gabán Elegante de Paño">
+                        <button class="heart-btn" aria-label="Agregar a favoritos" tabindex="0">
+                            <img src="../assets/iconos/favoritos.svg" alt="Agregar a favoritos" class="heart-icon">
+                        </button>
+                    </div>
+                    <div class="card-info">
+                        <h3>Gabán Elegante de Paño con Doble Botonadura</h3>
+                        <span class="precio">$190,000 COP</span>
+                        <button class="btn-agregar-carrito" tabindex="0">AGREGAR AL CARRITO</button>
+                    </div>
+                </div>
+
+                <!-- Producto 5 -->
+                <div class="product-card">
+                    <div class="card-img" style="background-image: url('../img/Vestidodebroderie.jpg')" role="img" aria-label="Vestido de broderie">
+                        <button class="heart-btn" aria-label="Agregar a favoritos" tabindex="0">
+                            <img src="../assets/iconos/favoritos.svg" alt="Agregar a favoritos" class="heart-icon">
+                        </button>
+                    </div>
+                    <div class="card-info">
+                        <h3>Vestido de broderie</h3>
+                        <span class="precio">$180,000 COP</span>
+                        <button class="btn-agregar-carrito" tabindex="0">AGREGAR AL CARRITO</button>
+                    </div>
+                </div>
+
+                <!-- Producto 6 -->
+                <div class="product-card">
+                    <div class="card-img" style="background-image: url('../img/Chaqueta Denim.webp')" role="img" aria-label="Chaqueta de Mezclilla Vintage">
+                        <button class="heart-btn" aria-label="Agregar a favoritos" tabindex="0">
+                            <img src="../assets/iconos/favoritos.svg" alt="Agregar a favoritos" class="heart-icon">
+                        </button>
+                    </div>
+                    <div class="card-info">
+                        <h3>Chaqueta de Mezclilla Vintage con Bolsillos Cargo</h3>
+                        <span class="precio">$149,400 COP</span>
+                        <button class="btn-agregar-carrito" tabindex="0">AGREGAR AL CARRITO</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- SECCIÓN ARIANA Y TOM -->
+        <section class="celebridades" aria-label="Colecciones por género">
+            <div class="celebridad-card" style="background-image: url('../img/arianamujeres.jpg')" role="img" aria-label="Colección mujer">
+                <div class="celebridad-contenido">
+                    <h3>MUJER</h3>
+                    <button class="btn-explorar" tabindex="0">EXPLORAR COLECCIÓN</button>
+                </div>
+            </div>
+            
+            <div class="celebridad-card" style="background-image: url('../img/tomhombre.jpg')" role="img" aria-label="Colección hombre">
+                <div class="celebridad-contenido">
+                    <h3>HOMBRE</h3>
+                    <button class="btn-explorar" tabindex="0">EXPLORAR COLECCIÓN</button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- SECCIÓN SUSCRIPCIÓN -->
+        <section class="suscripcion" aria-labelledby="suscripcion-titulo">
+            <h2 id="suscripcion-titulo">MANTENETE ACTUALIZADO</h2>
+            <p>Suscríbete para recibir las últimas novedades y ofertas exclusivas</p>
+            
+            <div class="suscripcion-form">
+                <label for="email-input" class="visually-hidden">Correo electrónico</label>
+                <input type="email" id="email-input" placeholder="Ingresa tu correo electrónico" tabindex="0">
+                <button id="suscribirse-btn" tabindex="0">SUSCRIBIRSE</button>
+            </div>
+        </section>
+    </main>
+    
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>NOVAWEAR</h4>
+                <p>Moda contemporánea para quienes buscan expresar su estilo único.</p>
+            </div>
+            
+            <div class="footer-col">
+                <h4>COMPRAS</h4>
+                <ul>
+                    <li><a href="#" tabindex="0">Mujer</a></li>
+                    <li><a href="#" tabindex="0">Hombre</a></li>
+                    <li><a href="#" tabindex="0">Lo Nuevo</a></li>
+                    <li><a href="#" tabindex="0">Ofertas</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>AYUDA</h4>
+                <ul>
+                    <li><a href="#" tabindex="0">Envíos</a></li>
+                    <li><a href="#" tabindex="0">Devoluciones</a></li>
+                    <li><a href="#" tabindex="0">Tallas</a></li>
+                    <li><a href="#" tabindex="0">Contacto</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>SÍGUENOS</h4>
+                <ul>
+                    <li><a href="#" tabindex="0">Instagram</a></li>
+                    <li><a href="#" tabindex="0">Facebook</a></li>
+                    <li><a href="#" tabindex="0">TikTok</a></li>
+                    <li><a href="#" tabindex="0">Pinterest</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2026 NOVAWEAR. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
