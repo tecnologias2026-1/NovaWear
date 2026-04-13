@@ -81,7 +81,7 @@ https://www.figma.com/proto/7a6go6iI8TAc55X5vObH0T/Mockcup?node-id=0-1&t=GBLyK1f
 
 Dentro del diseño de la base de datos del sistema NovaWear, se identifican varias entidades principales que permiten el correcto funcionamiento de la plataforma y el almacenamiento de la información necesaria:
 
-Usuario:
+- **Usuario:** 
 Almacena la información de cada persona registrada en el sistema, como nombre, correo electrónico, contraseña y datos de contacto. Esta entidad es fundamental, ya que permite la autenticación, gestión de perfil y asociación con otras entidades como pedidos y carrito de compras.
 
 Prenda (Producto):
