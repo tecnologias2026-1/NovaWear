@@ -8,26 +8,27 @@
 </head>
 <body>
     
-    <!-- HEADER con Flexbox -->
-<header class="main-header">
-    <div class="header-container">
-        <div class="Logo">
-        <img src="assets/iconos/logo.svg" aria-label="Logo NovaWear" alt="">
-        <span class="nombre-logo">NovaWear</span>
+<!-- ===== HEADER ===== -->
+<header>
+    <nav aria-label="Navegación principal">
+        <div class="logo">
+            <img src="../assets/iconos/logo.svg" alt="Logo NovaWear" class="logo-img">
+            <a href="#" aria-label="Ir al inicio">NovaWear</a>
         </div>
 
-        <nav class="nav-categorias">
-            <a href="#" class="boton-nav">Mujer</a>
-            <a href="#" class="boton-nav">Hombre</a>
-            <a href="#" class="boton-nav">Lo nuevo</a>
-        </nav>
+        <ul class="menu-central">
+        
+            <li><a href="../pages/mujer.html" aria-current="page">MUJER</a></li>
+            <li><a href="#" class="active" aria-current="page">HOMBRE</a></li>
+            <li><a href="../pages/home.html" aria-current="page">LO NUEVO</a></li>
+        </ul>
 
-        <nav class="nav-iconos" aria-label="Herramientas de usuario">
-            <a href="#" class="boton-icon icono-favoritos" aria-label="Ver mis favoritos"><img src="assets/iconos/favoritos.svg" alt=""></a>
-            <a href="#" class="boton-icon icono-bolsa" aria-label="Ver mi bolsa"><img src="assets/iconos/bolsa.svg" alt=""></a>
-            <a href="#" class="boton-icon icono-usuario" aria-label="Acceder a mi cuenta"><img src="assets/iconos/cuenta.svg" alt=""></a>
-        </nav>
-    </div>
+        <ul class="iconos-derecha">
+            <li><a href="../pages/favoritos.html" aria-label="Ver favoritos"><img src="../assets/iconos/favoritos.svg" alt="Favoritos" class="icono-nav"></a></li>
+            <li><a href="../pages/carrito.html" aria-label="Ver carrito"><img src="../assets/iconos/bolsa.svg" alt="Carrito" class="icono-nav"></a></li>
+            <li><a href="../pages/login.html" aria-label="Iniciar sesión"><img src="../assets/iconos/cuenta.svg" alt="Usuario" class="icono-nav"></a></li>
+        </ul>
+    </nav>
 </header>
     
     <!-- MAIN (requisito de HTML semántico) -->
