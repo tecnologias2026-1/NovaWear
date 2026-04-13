@@ -84,16 +84,16 @@ Dentro del diseño de la base de datos del sistema NovaWear, se identifican vari
 - **Usuario:** 
 Almacena la información de cada persona registrada en el sistema, como nombre, correo electrónico, contraseña y datos de contacto. Esta entidad es fundamental, ya que permite la autenticación, gestión de perfil y asociación con otras entidades como pedidos y carrito de compras.
 
-Prenda (Producto):
+- **Prenda (Producto):** 
 Contiene la información de los productos disponibles en la tienda, incluyendo nombre, precio, descripción, categoría, talla, color y cantidad en inventario. Esta tabla es clave para la visualización del catálogo y el proceso de compra.
 
-Carrito de compras:
+- **Carrito de compras:** 
 Representa el conjunto de productos que un usuario ha seleccionado antes de realizar la compra. Está asociado directamente a un usuario (relación 1:1) y permite almacenar temporalmente los productos, sus cantidades y el valor total.
 
-Pedido:
+- **Pedido:** 
 Registra las compras realizadas por los usuarios. Incluye información como fecha del pedido, estado, total de la compra y referencia al usuario que lo realizó. Un usuario puede tener múltiples pedidos (relación 1:N).
 
-Detalle de pedido:
+- **Detalle de pedido:** 
 Almacena la información específica de cada producto dentro de un pedido, como cantidad, precio y producto asociado. Esta entidad permite desglosar los pedidos en sus componentes individuales
 
 
