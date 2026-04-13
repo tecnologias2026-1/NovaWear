@@ -74,7 +74,7 @@ El diagrama de casos de uso muestra las principales interacciones entre los acto
 
 Diagrama de Secuencia
 
-Explicar qué proceso representa.
+El diagrama de secuencia representa el proceso de compra dentro de la plataforma NovaWear, mostrando el orden en que interactúan el usuario, el sistema y la pasarela de pagos. En este se visualiza cómo el usuario selecciona productos, los agrega al carrito y procede al pago, mientras el sistema gestiona la información y envía la solicitud a la pasarela de pagos para procesar la transacción. Finalmente, se muestra la confirmación de la compra, evidenciando la secuencia de acciones necesarias para completar el proceso de manera correcta.
 
 🎨 5. URL del Prototipo
 https://www.figma.com/proto/7a6go6iI8TAc55X5vObH0T/Mockcup?node-id=0-1&t=GBLyK1flqgiVamBy-1
