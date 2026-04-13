@@ -70,7 +70,7 @@ RNF6. El sistema debe proteger la información personal del usuario conforme a n
 
 Diagrama de Casos de Uso
 
-Explicar brevemente qué muestra el diagrama.
+El diagrama de casos de uso muestra las principales interacciones entre los actores del sistema (usuario, administrador y pasarela de pagos) y las funcionalidades que ofrece la plataforma NovaWear. En él se representan las acciones que puede realizar el usuario, como registrarse, iniciar sesión, ver el catálogo, gestionar el carrito y realizar compras; así como las funciones del administrador para gestionar productos y pedidos. Además, se incluye la interacción con la pasarela de pagos para procesar las transacciones. El diagrama permite visualizar de forma general cómo los usuarios interactúan con el sistema y cómo se relacionan las distintas funcionalidades entre sí.
 
 Diagrama de Secuencia
 
