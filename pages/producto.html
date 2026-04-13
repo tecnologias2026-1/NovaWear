@@ -11,31 +11,31 @@
 
 <!-- ===== HEADER ===== -->
 <header>
-    <nav>
+    <nav aria-label="Navegación principal">
         <div class="logo">
             <img src="../assets/iconos/logo.svg" alt="Logo NovaWear" class="logo-img">
             <a href="#">NovaWear</a>
         </div>
 
         <ul class="menu-central">
-            <li><a href="../pages/mujer.html">MUJER</a></li>
-            <li><a href="../pages/hombre.html">HOMBRE</a></li>
-            <li><a href="../pages/home.html">LO NUEVO</a></li>
+            <li><a href="../pages/mujer.html" aria-current="page">MUJER</a></li>
+            <li><a href="../pages/hombre.html" aria-current="page">HOMBRE</a></li>
+            <li><a href="../pages/home.html" aria-current="page">LO NUEVO</a></li>
         </ul>
 
         <ul class="iconos-derecha">
-            <li><a href="../pages/favoritos.html"><img src="../assets/iconos/favoritos.svg" alt="Favoritos" class="icono-nav"></a></li>
-            <li><a href="../pages/carrito.html"><img src="../assets/iconos/bolsa.svg" alt="Carrito" class="icono-nav"></a></li>
-            <li><a href="../pages/login.html"><img src="../assets/iconos/cuenta.svg" alt="Usuario" class="icono-nav"></a></li>
+            <li><a href="../pages/favoritos.html" aria-label="Ver favoritos"><img src="../assets/iconos/favoritos.svg" alt="Favoritos" class="icono-nav"></a></li>
+            <li><a href="../pages/carrito.html" aria-label="Ver carrito"><img src="../assets/iconos/bolsa.svg" alt="Carrito" class="icono-nav"></a></li>
+            <li><a href="../pages/login.html" aria-label="Iniciar sesión"><img src="../assets/iconos/cuenta.svg" alt="Usuario" class="icono-nav"></a></li>
         </ul>
     </nav>
 </header>
 
 <!-- ===== MAIN ===== -->
-<section class="producto">
+<main class="producto">
       <div class="producto-container">
         <div class="producto-img">
-            <img src="../assets/img/gaban_beige.png" alt="Gaban beige">
+            <img src="../img/gaban_beige.png" alt="Gaban beige">
         </div>
 
         <!-- Info -->
@@ -52,12 +52,12 @@
 
          <div class="tallas">
                 <p>Seleccionar talla</p>
-                <div class="tallas-opciones">
-                    <button>XS</button>
-                    <button>S</button>
-                    <button>M</button>
-                    <button>L</button>
-                    <button>XL</button>
+                <div class="tallas-opciones" role="group" aria-label="Seleccionar talla">
+                    <button aria-pressed="false">XS</button>
+                    <button aria-pressed="false">S</button>
+                    <button aria-pressed="false">M</button>
+                    <button aria-pressed="false">L</button>
+                    <button aria-pressed="false">XL</button>
                 </div>
             </div>
 
@@ -71,18 +71,14 @@
             </div>
              <!-- Botones -->
             <div class="acciones">
-            <button class="fav-btn">
-                <a href="../pages/favoritos.html">
-             <img src="../assets/iconos/favoritos.svg">
+            <a href="../pages/favoritos.html" class="fav-btn" aria-label="Agregar a favoritos">
+            <img src="../assets/iconos/favoritos.svg" alt="">
              </a>
-             </button>
 
-             <button class="add-cart">
-                 <a href="../pages/carrito.html">
-              <img src="../assets/iconos/bolsa.svg">
-               </a>
-                Añadir al carrito
-             </button>
+             <a href="../pages/carrito.html" class="add-cart">
+             <img src="../assets/iconos/bolsa.svg" alt="">
+            Añadir al carrito
+             </a>
             </div>
         </div>
 
@@ -94,11 +90,12 @@
     <!-- GRID DE PRODUCTOS -->
     <div class="grid-cards">
 
-        <div class="card">
+        <div class="card" tabindex="0">
            <div class="img-container">
-             <img src="../assets/img/chaqueta_negra_oversize.jpg" alt="Chaqueta negra oversize">
+             <img src="../img/chaqueta_negra_oversize.jpg" alt="Chaqueta negra oversize">
+             
 
-              <button class="heart-btn" onclick="toggleLike(this)">
+              <button class="heart-btn" onclick="toggleLike(this)" aria-pressed="false" aria-label="Agregar a favoritos">
                      <img src="../assets/iconos/favoritos.svg" alt="Like" class="heart-icon">
               </button>
               </div>
@@ -107,11 +104,11 @@
             <p class="price">$249.000</p>
         </div>
 
-         <div class="card">
+         <div class="card" tabindex="0">
            <div class="img-container">
-             <img src="../assets/img/camisa_lana.jpeg" alt="Camisa de lana">
+             <img src="../img/camisa_lana.jpeg" alt="Camisa de lana">
 
-             <button class="heart-btn" onclick="toggleLike(this)">
+             <button class="heart-btn" onclick="toggleLike(this)" aria-pressed="false" aria-label="Agregar a favoritos">
                      <img src="../assets/iconos/favoritos.svg" alt="Like" class="heart-icon">
               </button>
               </div>
@@ -120,12 +117,12 @@
             <p class="price">$75.000</p>
         </div>
 
-        <div class="card">
+        <div class="card" tabindex="0">
            <div class="img-container">
-             <img src="../assets/img/chaqueta_cafe.jpg" alt="Chaqueta café de cuero">
+             <img src="../img/chaqueta_cafe.jpg" alt="Chaqueta café de cuero">
 
-             <button class="heart-btn" onclick="toggleLike(this)">
-                     <img src="../assets/iconos/favoritos.svg" alt="Like" class="heart-icon">
+             <button class="heart-btn" onclick="toggleLike(this)" aria-pressed="false" aria-label="Agregar a favoritos">       
+             <img src="../assets/iconos/favoritos.svg" alt="Like" class="heart-icon">
               </button>
               </div>
            
@@ -133,11 +130,11 @@
             <p class="price">$300.000</p>
         </div>
 
-        <div class="card">
+        <div class="card" tabindex="0">
            <div class="img-container">
-             <img src="../assets/img/saco_blanco.jpg" alt="Saco de lana blanco">
+             <img src="../img/saco_blanco.jpg" alt="Saco de lana blanco">
 
-             <button class="heart-btn" onclick="toggleLike(this)">
+             <button class="heart-btn" onclick="toggleLike(this)" aria-pressed="false" aria-label="Agregar a favoritos">
                      <img src="../assets/iconos/favoritos.svg" alt="Like" class="heart-icon">
               </button>
               </div>
@@ -149,7 +146,7 @@
     </div>
 
     
-</section>
+</main>
 
 <!-- ===== FOOTER ===== -->
 <footer>
@@ -201,19 +198,23 @@
 <script>
 function toggleLike(btn) {
     btn.classList.toggle("liked");
+
+    let estado = btn.classList.contains("liked");
+    btn.setAttribute("aria-pressed", estado);
 }
 </script>
-
 <script>
 const tallas = document.querySelectorAll(".tallas-opciones button");
 
 tallas.forEach(btn => {
     btn.addEventListener("click", () => {
-        // quitar active a todos
-        tallas.forEach(b => b.classList.remove("active"));
+        tallas.forEach(b => {
+            b.classList.remove("active");
+            b.setAttribute("aria-pressed", "false");
+        });
 
-        // activar el que clickeaste
         btn.classList.add("active");
+        btn.setAttribute("aria-pressed", "true");
     });
 });
 </script>
