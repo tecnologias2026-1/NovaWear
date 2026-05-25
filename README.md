@@ -119,7 +119,7 @@ Decidimos organizar el proyecto de esta manera por tres razones principales. Pri
 
 **¿Cómo correr el proyecto?**
 
-El sitio ya está publicado y se puede acceder desde cualquier navegador web en la siguiente URL: [novawear-production.up.railway.app]
+El sitio ya está publicado y se puede acceder desde cualquier navegador web en la siguiente URL: [https://novawear-production.up.railway.app/]
 [https://tecnologias2026-1.github.io/NovaWear/]
 
 **¿Qué puede hacer el usuario en el sitio?**
